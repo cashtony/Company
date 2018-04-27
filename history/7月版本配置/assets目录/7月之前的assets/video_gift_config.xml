@@ -1,0 +1,667 @@
+<?xml version="1.0" encoding="GB2312"?>
+ <!-- 更改本文件时，必须同步调整 alienbrain://H3D-131/QQX5_Mainland/exe/server/config/video_anchor_pay_cfg.xml 调整主播分成 --> 
+ <!-- 更改本文件后，必须复制到 alienbrain://H3D-131/QQX5_Mainland/exe/VideoAdminClient/config/video_gift_config.xml 调同步主播端配置文件 --> 
+<VideoGiftCfg>	
+	<!-- 开启时间段配置 -->
+	<OpenPeriods>
+		<!--可见礼物ID列表，****ID间加间隔-->
+		<!--****如果有免费礼物的话，务必保证免费礼物位于首位-->
+		<!--****这里的顺序就是游戏中的显示顺序-->
+		<!--过期的应当删掉-->
+		<!--****不在任何时间段内则显示default列表-->
+		<!--ID为99的礼物，是活动专用礼物“选票” -->
+		<default gifts="1 16 30 31 32 2 17 33 4 22 34 5 9 19" />
+		<!-- 在指定时间内有效
+		<period begint="2014-11-25 00:00:00" endt="2015-12-31 23:59:59" gifts="1 2 4 18 16 5 19 20" />
+		-->
+	</OpenPeriods>
+	
+	<!--视频房间热度宝箱冷却状态时间-->
+	<TreasureBoxFreezeTime>120</TreasureBoxFreezeTime>
+	
+	<!--财富不同等级对应不同图标-->
+	<WealthLevelIcon>
+		<level wealth="0" icon="Znewui_spfjcjfsb4" name="1111" />
+		<level wealth="50000" icon="Znewui_spfjcjfsb3" name="2222" />
+		<level wealth="200000" icon="Znewui_spfjcjfsb2" name="3333" />
+		<level wealth="1000000" icon="Znewui_spfjcjfsb1" name="4444" />
+	</WealthLevelIcon>
+	
+	<!-- gift_type 1免费 2普通 3魔法 4尊贵 5后援团礼物 6梦幻币-->
+	<!-- 晚香玉 -->
+	<GiftData id="1" gift_type="1">
+		<Name>str_res_item_name_3080100</Name>
+		<Icon>zmobileui_liwuwanxiangyu</Icon>
+    <Intro>str_res_item_detail_3080100</Intro>
+    <Price>0</Price>
+    <Wealth>0</Wealth> <!-- 财富值增加-->
+    <Popularity>1</Popularity> <!-- -->
+    <Starlight>0</Starlight><!-- 星耀增加 -->
+    <Affinity>0</Affinity>	<!--亲密度增加-->
+    <AddGiftPoolHeight>0</AddGiftPoolHeight> <!-- 礼物池增加-->
+    <UIInfoList> <!-- 不同数量对应不同的界面表现 -->
+    	<!-- [count, count_next) 特效，UI底板，是否展示形象(0否1是)，isVipEffect是否显示vip特效(0否1是)-->
+    	<uiinfo count="1"  uir="bg_videoroom_giftbackblue" />
+    </UIInfoList>
+    <DropList> 
+    </DropList>
+	</GiftData>
+    <!-- 选票 -->
+		<GiftData id="99" gift_type="2">
+		<Name>str_live_gift_name_99</Name>
+		<Icon>zmobileui_liwuxuanpiao</Icon>
+    <Intro>str_live_gift_detail_99</Intro>
+    <Price>1</Price>
+    <Wealth>0</Wealth>
+    <Popularity>0</Popularity>
+    <Starlight>0</Starlight>
+    <Affinity>0</Affinity>
+    <AddGiftPoolHeight>10</AddGiftPoolHeight>
+
+    <UIInfoList>
+    	<uiinfo count="1"  uir="bg_videoroom_giftbackblue" />
+    	<uiinfo count="2" uir="bg_videoroom_giftbackpink" />
+
+    </UIInfoList>
+    <DropList> 
+    	    			<item count="1" str="  1 " /> 
+			<item count="66" str=" 66 顺心如意" />		
+			<item count="199" str="199 一生一世" />
+    </DropList>
+	</GiftData>
+
+		<!-- 愚人节礼物 -->
+		<GiftData id="10" gift_type="2">
+		<Name>str_live_gift_name_10</Name>
+		<Icon>zmobileui_liwuyurenle</Icon>
+    <Intro>str_live_gift_detail_10</Intro>
+    <Price>1</Price>
+    <Wealth>1</Wealth>
+    <Popularity>0</Popularity>
+    <Starlight>1</Starlight>
+    <Affinity>1</Affinity>
+    <AddGiftPoolHeight>10</AddGiftPoolHeight>
+
+    <UIInfoList>
+    	<uiinfo count="1"  uir="bg_videoroom_giftbackblue" />
+    	<uiinfo count="2" uir="bg_videoroom_giftbackpink" />
+    </UIInfoList>
+    <DropList> 
+    	<item count="1" str="  1 " /> 
+			<item count="66" str=" 66 顺心如意" />		
+			<item count="199" str="199 一生一世" />
+    </DropList>
+	</GiftData>
+		<!-- 心形巧克力 -->
+		<GiftData id="8" gift_type="2">
+		<Name>str_live_gift_name_8</Name>
+		<Icon>zmobileui_liwuxinxingqiaokeli</Icon>
+    <Intro>str_live_gift_detail_8</Intro>
+    <Price>1</Price>
+    <Wealth>1</Wealth>
+    <Popularity>0</Popularity>
+    <Starlight>1</Starlight>
+    <Affinity>1</Affinity>
+    <AddGiftPoolHeight>10</AddGiftPoolHeight>
+	
+    <UIInfoList>
+    	<uiinfo count="1"  uir="bg_videoroom_giftbackblue" />
+    	<uiinfo count="2" uir="bg_videoroom_giftbackpink" />
+    </UIInfoList>
+    <DropList> 
+    	   		<item count="1" str="  1 " /> 
+			<item count="66" str=" 66 顺心如意" />		
+			<item count="199" str="199 一生一世" />
+    </DropList>
+	</GiftData>
+		<!-- 天使 -->
+<GiftData id="9" gift_type="3">
+		<Name>str_live_gift_name_9</Name>
+		<Icon>zmobileui_liwuqiubitezhijian</Icon>
+    <Intro>str_live_gift_detail_9</Intro>
+    <Price>499</Price>
+    <Wealth>499</Wealth>
+    <Popularity>0</Popularity>
+    <Starlight>499</Starlight>
+    <Affinity>499</Affinity>
+    <AddGiftPoolHeight>4990</AddGiftPoolHeight>
+    <NumForScrollInfo>1</NumForScrollInfo> <!-- 跑马灯显示需要的数量 大于该值才显示-->
+   
+    
+    <UIInfoList>
+    	<uiinfo count="2" uir="bg_videoroom_giftbackpink" />
+    </UIInfoList>
+    <DropList> 
+    		<item count="1" str="  1 一心一意" />
+			<item count="10" str="10 十全十美" /> 
+    </DropList>
+	</GiftData>
+		<!-- 鞭炮 -->
+		<GiftData id="6" gift_type="2">
+		<Name>str_live_gift_name_6</Name>
+		<Icon>zmobileui_liwubianpao</Icon>
+    <Intro>str_live_gift_detail_6</Intro>
+    <Price>1</Price>
+    <Wealth>1</Wealth>
+    <Popularity>0</Popularity>
+    <Starlight>1</Starlight>
+    <Affinity>1</Affinity>
+    <AddGiftPoolHeight>10</AddGiftPoolHeight>
+    <UIInfoList>
+    	<uiinfo count="1"  uir="bg_videoroom_giftbackblue" />
+    	<uiinfo count="2" uir="bg_videoroom_giftbackpink" />
+    </UIInfoList>
+    <DropList> 
+    	<item count="1" str="  1 " /> 
+			<item count="66" str=" 66 顺心如意" />		
+			<item count="199" str="199 一生一世" />
+    </DropList>
+	</GiftData>
+	<!-- 财神 -->
+	<GiftData id="7" gift_type="3">
+		<Name>str_live_gift_name_7</Name>
+		<Icon>zmobileui_liwucaishen</Icon>
+    <Intro>str_live_gift_detail_7</Intro>
+    <Price>499</Price>
+    <Wealth>499</Wealth>
+    <Popularity>0</Popularity>
+    <Starlight>499</Starlight>
+    <Affinity>499</Affinity>
+    <AddGiftPoolHeight>4990</AddGiftPoolHeight>
+    <NumForScrollInfo>1</NumForScrollInfo> <!-- 跑马灯显示需要的数量 大于该值才显示-->
+   
+    
+    <UIInfoList>
+    	<uiinfo count="2" uir="bg_videoroom_giftbackpink" />
+    </UIInfoList>
+    <DropList> 
+    	<item count="1" str=" 1 一心一意" />
+			<item count="10" str="10 十全十美" /> 
+    </DropList>
+	</GiftData>
+	<!-- My Love -->
+	<GiftData id="12" gift_type="2">
+		<Name>str_live_gift_name_12</Name>
+		<Icon>zmobileui_liwumylove</Icon>
+    <Intro>str_live_gift_detail_12</Intro>
+    <Price>9</Price>
+    <Wealth>9</Wealth>
+    <Popularity>0</Popularity>
+    <Starlight>9</Starlight>
+    <Affinity>9</Affinity>
+    <AddGiftPoolHeight>90</AddGiftPoolHeight>
+   
+    <UIInfoList>
+    	<uiinfo count="1"  uir="bg_videoroom_giftbackblue" />
+    	<uiinfo count="2" uir="bg_videoroom_giftbackpink" />
+    </UIInfoList>
+    <DropList> 
+    	<item count="1" str="  1 " /> 
+		<item count="9" str=" 9 顺心如意" />		
+		<item count="66" str=" 66 顺心如意" />
+    </DropList>
+	</GiftData>
+	
+	
+	
+	<!-- 蓝玫瑰 -->
+	<GiftData id="2" gift_type="2">
+		<Name>str_live_gift_name_2</Name>
+		<Icon>zmobileui_liwulanmeigui</Icon>
+    <Intro>str_live_gift_detail_2</Intro>
+    <Price>1</Price>
+    <Wealth>1</Wealth>
+    <Popularity>0</Popularity>
+    <Starlight>1</Starlight>
+    <Affinity>1</Affinity>
+    <AddGiftPoolHeight>10</AddGiftPoolHeight>
+   
+    <UIInfoList>
+    	<uiinfo count="1"  uir="bg_videoroom_giftbackblue" />
+    	<uiinfo count="2" uir="bg_videoroom_giftbackpink" />
+    </UIInfoList>
+    <DropList> 
+    	<item count="1" str="  1 " /> 
+			<item count="66" str=" 66 顺心如意" />		
+			<item count="199" str="199 一生一世" />
+    </DropList>
+	</GiftData>
+	<!-- hk礼物 -->
+	<GiftData id="11" gift_type="2">
+		<Name>str_live_gift_name_11</Name>
+		<Icon>zmobileui_liwuhellokitty</Icon>
+    <Intro>str_live_gift_detail_11</Intro>
+    <Price>1</Price>
+    <Wealth>1</Wealth>
+    <Popularity>0</Popularity>
+    <Starlight>1</Starlight>
+    <Affinity>1</Affinity>
+    <AddGiftPoolHeight>10</AddGiftPoolHeight>
+     <guardLevel>50</guardLevel><!--50对应的是高级守护-->
+    <UIInfoList>
+    	<uiinfo count="1"  uir="bg_videoroom_giftbackblue" />
+    	<uiinfo count="2" uir="bg_videoroom_giftbackpink" />
+    </UIInfoList>
+    <DropList> 
+    	<item count="1" str="  1 " /> 
+			<item count="66" str=" 66 顺心如意" />		
+			<item count="199" str="199 一生一世" />
+    </DropList>
+	</GiftData>	
+	<!-- 糖果 -->
+	<GiftData id="3" gift_type="2">
+		<Name>str_live_gift_name_3</Name>
+		<Icon>zmobileui_liwutangguo</Icon>
+    <Intro>str_live_gift_detail_3</Intro>
+    <Price>9</Price>
+    <Wealth>9</Wealth>
+    <Popularity>0</Popularity>
+    <Starlight>9</Starlight>
+    <Affinity>9</Affinity>
+    <AddGiftPoolHeight>90</AddGiftPoolHeight>
+    <UIInfoList>
+    	<uiinfo count="1"  uir="bg_videoroom_giftbackblue" />
+    	<uiinfo count="2" uir="bg_videoroom_giftbackpink" />
+    </UIInfoList>
+    <DropList> 
+    	<item count="1" str="  1 " /> 
+			<item count="9" str=" 9 顺心如意" />		
+			<item count="66" str=" 66 顺心如意" />
+    </DropList>
+	</GiftData>
+	
+	<!-- 花篮 -->
+	<GiftData id="4" gift_type="4">
+		<Name>str_live_gift_name_4</Name>
+		<Icon>zmobileui_liwuhualan</Icon>
+    <Intro>str_live_gift_detail_4</Intro>
+    <Price>199</Price>
+    <Wealth>199</Wealth>
+    <Popularity>0</Popularity>
+    <Starlight>199</Starlight>
+    <Affinity>199</Affinity>
+    <AddGiftPoolHeight>1990</AddGiftPoolHeight>
+    <NumForScrollInfo>19</NumForScrollInfo> <!-- 跑马灯显示需要的数量 大于该值才显示-->
+    <showAction>HA_1309_shipinfngjian01</showAction>	<!-- 展示动作 -->
+    <showActionLength>3000</showActionLength> <!-- 展示动作长度 单位ms -->
+    <UIInfoList>
+    	<uiinfo count="1" path="video_gift_hualan" uir="" />
+    </UIInfoList>
+    <DropList> 
+    	<item count="1" str="  1 一心一意" />
+			<item count="10" str=" 10 十全十美" /> 
+    </DropList>
+	</GiftData>
+	
+	<!-- 烟花 -->
+	<GiftData id="5" gift_type="4">
+		<Name>str_live_gift_name_5</Name>
+		<Icon>zmobileui_liwuyanhua</Icon>
+    <Intro>str_live_gift_detail_5</Intro>
+    <Price>499</Price>
+    <Wealth>499</Wealth>
+    <Popularity>0</Popularity>
+    <Starlight>499</Starlight>
+    <Affinity>499</Affinity>
+    <AddGiftPoolHeight>4990</AddGiftPoolHeight>
+    <NumForScrollInfo>1</NumForScrollInfo> <!-- 跑马灯显示需要的数量 大于该值才显示-->
+    <showAction>HA_1309_shipinfngjian02</showAction>	<!-- 展示动作 -->
+    <showActionLength>3000</showActionLength> <!-- 展示动作长度 单位ms -->
+    <UIInfoList>
+    	<uiinfo count="1" path="gift_gif" uir="" />
+    </UIInfoList>
+    <DropList> 
+    	<item count="1" str="  1 一心一意" />
+			<item count="10" str=" 10 十全十美" /> 
+    </DropList>
+	</GiftData>
+	
+	<!-- 小妖 -->
+<GiftData id="14" gift_type="3">
+		<Name>str_live_gift_name_14</Name>
+		<Icon>zmobileui_liwuxiaoyao</Icon>
+    <Intro>str_live_gift_detail_14</Intro>
+    <Price>499</Price>
+    <Wealth>499</Wealth>
+    <Popularity>0</Popularity>
+    <Starlight>499</Starlight>
+    <Affinity>499</Affinity>
+    <AddGiftPoolHeight>4990</AddGiftPoolHeight>
+    <NumForScrollInfo>1</NumForScrollInfo> <!-- 跑马灯显示需要的数量 大于该值才显示-->
+    <UIInfoList>
+    	<uiinfo count="1" path="video_gift_xiaoyao" uir="" />
+    </UIInfoList>
+    <DropList> 
+    	<item count="1" str="  1 一心一意" />
+			<item count="10" str=" 10 十全十美" /> 
+    </DropList>
+	</GiftData>
+	
+	<!-- 点卷 -->
+	<GiftData id="15" gift_type="2">
+		<Name>str_live_gift_name_15</Name>
+		<Icon>zmobileui_liwudianjuan</Icon>
+    <Intro>str_live_gift_detail_15</Intro>
+    <Price>1</Price>
+    <Wealth>1</Wealth>
+    <Popularity>0</Popularity>
+    <Starlight>1</Starlight>
+    <Affinity>1</Affinity>
+    <AddGiftPoolHeight>10</AddGiftPoolHeight>
+
+    <UIInfoList>
+    	<uiinfo count="1"  uir="bg_videoroom_giftbackblue" />
+    	<uiinfo count="2" uir="bg_videoroom_giftbackpink" />
+    </UIInfoList>
+    <DropList> 
+    	<item count="1" str="  1 " /> 
+			<item count="9" str=" 9 顺心如意" />		
+			<item count="66" str=" 66 顺心如意" />
+    </DropList>
+	</GiftData>
+
+	<!-- 后援团礼物 -->
+<GiftData id="16" gift_type="5">
+		<Name>str_live_gift_name_16</Name>
+		<Icon>zmobileui_liwuziluolan</Icon>
+    <Intro>str_live_gift_detail_16</Intro>
+    <Price>0</Price>
+    <Wealth>0</Wealth>
+    <Popularity>1</Popularity>
+    <Starlight>0</Starlight>
+    <Affinity>0</Affinity>
+    <CostMemberScore>5</CostMemberScore>	<!-- 后援团个人积分消耗 -->
+    <AddAnchorScore>1</AddAnchorScore>		<!-- 增加主播积分 -->
+    <AddGiftPoolHeight>0</AddGiftPoolHeight>
+    <UIInfoList>
+    	<uiinfo count="1"  uir="bg_videoroom_giftbackblue" />
+    	<uiinfo count="2" uir="bg_videoroom_giftbackpink" />
+    </UIInfoList>
+    <DropList> 
+    	<item count="1" str="  1 " /> 
+			<item count="19" str=" 9 顺心如意" />		
+			<item count="49" str=" 66 顺心如意" />
+    </DropList>
+	</GiftData>	
+	
+	<!-- 七夕情书 -->
+	<GiftData id="17" gift_type="2">
+		<Name>str_live_gift_name_17</Name>
+		<Icon>zmobileui_qixiqingshu</Icon>
+    <Intro>str_live_gift_detail_17</Intro>
+    <Price>9</Price>
+    <Wealth>9</Wealth>
+    <Popularity>0</Popularity>
+    <Starlight>9</Starlight>
+    <Affinity>9</Affinity>
+    <AddGiftPoolHeight>90</AddGiftPoolHeight>
+    <UIInfoList>
+    	<uiinfo count="1"  uir="bg_videoroom_giftbackblue" />
+    	<uiinfo count="2" uir="bg_videoroom_giftbackpink" />
+    </UIInfoList>
+    <DropList> 
+    	<item count="1" str="  1 " /> 
+			<item count="9" str=" 9 顺心如意" />		
+			<item count="66" str=" 66 顺心如意" />
+    </DropList>
+	</GiftData>
+
+	<!-- 肥皂 -->
+	<GiftData id="18" gift_type="3">
+		<Name>str_live_gift_name_18</Name>
+		<Icon>zmobileui_liwufeizao</Icon>
+    <Intro>str_live_gift_detail_18</Intro>
+    <Price>199</Price>
+    <Wealth>199</Wealth>
+    <Popularity>0</Popularity>
+    <Starlight>199</Starlight>
+    <Affinity>199</Affinity>
+    <AddGiftPoolHeight>1990</AddGiftPoolHeight>
+    <NumForScrollInfo>19</NumForScrollInfo> <!-- 跑马灯显示需要的数量 大于该值才显示-->
+    <showAction>HA_1309_shipinfngjian01</showAction>	<!-- 展示动作 -->
+    <showActionLength>3000</showActionLength> <!-- 展示动作长度 单位ms -->
+    <UIInfoList>
+    	<uiinfo count="1" path="video_gift_feizao" uir="" />
+    </UIInfoList>
+    <DropList> 
+    	<!-- 下拉列表选项-->
+			<item count="1" str="  1 一心一意" />
+			<item count="10" str=" 10 十全十美" /> 
+    </DropList>
+	</GiftData>
+	
+	<!-- 钻戒 -->
+	<GiftData id="19" gift_type="4">
+		<Name>str_live_gift_name_20</Name>
+		<Icon>zmobileui_liwuzuanjie</Icon>
+	    <Intro>str_live_gift_detail_20</Intro>
+	    <Price>998</Price>
+	    <Wealth>998</Wealth>
+	    <Popularity>0</Popularity>
+	    <Starlight>998</Starlight>
+	    <Affinity>998</Affinity>
+	    <AddGiftPoolHeight>9980</AddGiftPoolHeight>
+	    <NumForScrollInfo>2</NumForScrollInfo> <!-- 跑马灯显示需要的数量 大于或等于该值才显示-->
+	    <showAction>HA_1509_shipinfngjian01</showAction>	<!-- 展示动作 -->
+	    <showActionLength>6000</showActionLength> <!-- 展示动作长度 单位ms -->
+	    <showActionEffect>ui_effect/videoroom/videoroom_zuanjie_x_m.spe</showActionEffect> <!-- 钻戒展示动作特效 -->
+		<UIInfoList>
+	    	<uiinfo count="1" path="gift_gif" uir="" />
+	    </UIInfoList>
+	    <DropList> 
+	    	<item count="1" str="  1 一心一意" />
+			<item count="10" str=" 10 十全十美" /> 
+	    </DropList>
+	</GiftData>
+	<!-- 礼花弹 -->
+	<GiftData id="20" gift_type="3">
+		<Name>str_live_gift_name_21</Name>
+		<Icon>zmobileui_liwulihuadan</Icon>
+    	<Intro>str_live_gift_detail_21</Intro>
+    	<Price>699</Price>
+    	<Wealth>699</Wealth>
+    	<Popularity>0</Popularity>
+    	<Starlight>699</Starlight>
+    	<Affinity>699</Affinity>
+    	<AddGiftPoolHeight>6990</AddGiftPoolHeight>
+    	<NumForScrollInfo>2</NumForScrollInfo> <!-- 跑马灯显示需要的数量 大于或等于该值才显示-->
+    	<UIInfoList>
+    		<!-- [count, count_next) 特效，UI底板，是否展示形象(0否1是)，isVipEffect是否显示vip特效(0否1是)-->
+			<uiinfo count="1" path="gift_gif" uir="" />
+    	</UIInfoList>
+    	<DropList> 
+    		<!-- 下拉列表选项-->
+			<item count="1" str="1 一心一意" /> 
+			<item count="5" str="5 我只爱你" /> 
+			<item count="10" str="10 十全十美" /> 
+    	</DropList>
+	</GiftData>
+	
+	<!-- 吃药吗 -->
+	<GiftData id="22" gift_type="3">
+		<Name>str_live_gift_name_22</Name>
+		<Icon>zmobileui_liwuchiyao</Icon>
+		<Intro>str_live_gift_detail_22</Intro>
+		<Price>199</Price>
+		<Wealth>199</Wealth>
+		<Popularity>0</Popularity>
+		<Starlight>199</Starlight>
+		<Affinity>199</Affinity>
+		<AddGiftPoolHeight>1990</AddGiftPoolHeight>
+		<NumForScrollInfo>20</NumForScrollInfo> <!-- 跑马灯显示需要的数量 大于或等于该值才显示-->
+		<UIInfoList>
+    	<!-- [count, count_next) 特效，UI底板，是否展示形象(0否1是)，isVipEffect是否显示vip特效(0否1是)-->
+			<uiinfo count="1" path="gift_gif" uir="" /> 
+		</UIInfoList>
+		<DropList> 
+    	<!-- 下拉列表选项-->
+			<item count="1" str="1 一心一意" /> 
+			<item count="10" str="10 十全十美" /> 
+		</DropList>
+	</GiftData>
+	<!-- 梦幻币房间礼物-V587 -->
+	<GiftData id="32" gift_type="6">
+		<Name>str_live_gift_name_25</Name>
+		<Icon>zmobileui_liwuv587</Icon>
+    <Intro>str_live_gift_detail_25</Intro>
+    <Price>999</Price>
+    <Wealth>0</Wealth>
+    <Popularity>0</Popularity>
+    <Starlight>0</Starlight>
+    <Affinity>0</Affinity>
+    <AddGiftPoolHeight>6990</AddGiftPoolHeight>
+    <NumForScrollInfo>10</NumForScrollInfo> <!-- 跑马灯显示需要的数量 大于或等于该值才显示-->
+    <UIInfoList>
+    	<!-- [count, count_next) 特效，UI底板，是否展示形象(0否1是)，isVipEffect是否显示vip特效(0否1是)-->
+			<uiinfo count="10" path="ui_effect/videoroom/videoroom_V587_01.spe" uir="znew_splwv587CAback" isVipEffect="1"/> 
+    </UIInfoList>
+    <DropList> 
+    	<!-- 下拉列表选项-->
+    	<item count="1" str=" 1 " /> 
+			<item count="10" str=" 10 十全十美" /> 
+    </DropList>
+	</GiftData>
+	<!-- 梦幻币房间礼物-鼓掌 -->
+	<GiftData id="31" gift_type="6">
+			<Name>str_live_gift_name_24</Name>
+		<Icon>zmobileui_liwuguzhang</Icon>
+    <Intro>str_live_gift_detail_24</Intro>
+    <Price>499</Price>
+    <Wealth>0</Wealth>
+    <Popularity>0</Popularity>
+    <Starlight>0</Starlight>
+    <Affinity>0</Affinity>
+    <AddGiftPoolHeight>6990</AddGiftPoolHeight>
+    <NumForScrollInfo>100</NumForScrollInfo> <!-- 跑马灯显示需要的数量 大于或等于该值才显示-->
+    <UIInfoList>
+    	<!-- [count, count_next) 特效，UI底板，是否展示形象(0否1是)，isVipEffect是否显示vip特效(0否1是)-->
+			<uiinfo count="30" path="ui_effect/videoroom/videoroom_guzhang_01.spe" uir="znew_splwgzCAback" isVipEffect="1"/> 
+    </UIInfoList>
+    <DropList> 
+    	<!-- 下拉列表选项-->
+			<item count="1" str=" 1 " /> 
+			<item count="10" str=" 10 想亲亲你" />
+    </DropList>
+	</GiftData>
+	<!-- 梦幻币房间礼物-荧光棒 -->
+	<GiftData id="30" gift_type="6">
+		<Name>str_live_gift_name_23</Name>
+		<Icon>zmobileui_liwuyingguangbang</Icon>
+    <Intro>str_live_gift_detail_23</Intro>
+    <Price>199</Price>
+    <Wealth>0</Wealth>
+    <Popularity>0</Popularity>
+    <Starlight>0</Starlight>
+    <Affinity>0</Affinity>
+    <AddGiftPoolHeight>1990</AddGiftPoolHeight>
+    <NumForScrollInfo>200</NumForScrollInfo> <!-- 跑马灯显示需要的数量 大于或等于该值才显示-->
+    <UIInfoList>
+    	<!-- [count, count_next) 特效，UI底板，是否展示形象(0否1是)，isVipEffect是否显示vip特效(0否1是)-->
+			<uiinfo count="1" path="ui_effect/videoroom/videoroom_yingguangbang_01.spe" uir="znew_splwygbCAback" isVipEffect="1"/> 
+			<uiinfo count="50" path="ui_effect/videoroom/videoroom_yingguangbang_02.spe" uir="znew_splwygbCAback" isVipEffect="1"/>
+    </UIInfoList>
+    <DropList> 
+    	<!-- 下拉列表选项-->
+			<item count="1" str=" 1 " /> 
+			<item count="9" str=" 9 想亲亲你" />
+			<item count="66" str=" 66 顺心如意" />
+    </DropList>
+	</GiftData>
+	<!-- 么么哒 -->
+	<GiftData id="33" gift_type="2">
+		<Name>str_live_gift_name_26</Name>
+		<Icon>zmobileui_liwumemda</Icon>
+    <Intro>str_live_gift_detail_26</Intro>
+    <Price>9</Price>
+    <Wealth>9</Wealth>
+    <Popularity>0</Popularity>
+    <Starlight>9</Starlight>
+    <Affinity>9</Affinity>
+    <AddGiftPoolHeight>90</AddGiftPoolHeight>
+    <Exp>9</Exp>
+    <NumForScrollInfo>1314</NumForScrollInfo> <!-- 跑马灯显示需要的数量 大于或等于该值才显示-->
+    <UIInfoList>
+    	<!-- [count, count_next) 特效，UI底板，是否展示形象(0否1是)，isVipEffect是否显示vip特效(0否1是)-->
+    	<uiinfo count="1" path="ui_effect/videoroom/videoroom_momoda_01.spe" uir="Znew_splwmmdCback" isVipEffect="1"/>
+    	<uiinfo count="66" path="ui_effect/videoroom/videoroom_momoda_02.spe" uir="Znew_splwmmdCback" isVipEffect="1"/>
+    	<uiinfo count="1314" path="ui_effect/videoroom/videoroom_momoda_03.spe" uir="Znew_splwmmdCback" isVipEffect="1"/>
+			</UIInfoList>
+    <DropList> 
+    	<!-- 下拉列表选项-->
+			<item count="1" str=" 1 " /> 
+			<item count="9" str=" 9 想亲亲你" />
+			<item count="66" str=" 66 顺心如意" />
+    </DropList>
+	</GiftData>
+	
+<!-- 超级捧场卡 -->
+<GiftData id="98" gift_type="2">
+    <Name>str_live_gift_name_19</Name>
+    <Icon>znewui_shipinlipintb20</Icon>
+    <Intro>str_live_gift_detail_19</Intro>
+    <Price>199</Price>
+    <Wealth>199</Wealth>
+    <Popularity>0</Popularity>
+    <Starlight>199</Starlight>
+    <Affinity>199</Affinity>
+    <AddGiftPoolHeight>0</AddGiftPoolHeight>
+    <NumForScrollInfo>0</NumForScrollInfo> <!-- 跑马灯显示需要的数量 大于或等于该值才显示-->
+    <showAction></showAction>	<!-- 展示动作 -->
+    <showActionLength></showActionLength> <!-- 展示动作长度 单位ms -->
+    <showActionEffect>ui_effect/videoroom/videoroom_zbcjpck_01.spe</showActionEffect> <!-- 现在是假的！！！！！！！！壕令的 -->
+    <UIInfoList>
+        <!-- [count, count_next) 特效，UI底板，是否展示形象(0否1是)，isVipEffect是否显示vip特效(0否1是)-->
+        <uiinfo count="1" path="" effectFullScreen="ui_effect/videoroom/videoroom_zbcjpck_01.spe" uir="" isVipEffect="1"/> 
+        <uiinfo count="5" path="" effectFullScreen="ui_effect/videoroom/videoroom_zbcjpck_01.spe" uir="" isVipEffect="1"/>
+    </UIInfoList>
+    <DropList> 
+    </DropList>
+</GiftData>
+
+	<!-- 铭牌 -->
+  <GiftData id="34" gift_type="3">
+		<Name>str_live_gift_name_27</Name>
+		<Icon>zmobileui_liwumingpai</Icon>
+    <Intro>str_live_gift_detail_27</Intro>
+    <Price>199</Price>
+    <Wealth>199</Wealth>
+    <Popularity>0</Popularity>
+    <Starlight>199</Starlight>
+    <Affinity>199</Affinity>
+    <AddGiftPoolHeight>1990</AddGiftPoolHeight>
+    <Exp>199</Exp>
+    <NumForScrollInfo>30</NumForScrollInfo> <!-- 跑马灯显示需要的数量 大于或等于该值才显示-->
+    <showAction>HA_1507_splw01</showAction>	<!-- 展示动作 -->
+    <showActionLength>5466</showActionLength> <!-- 展示动作长度 单位ms -->
+    <UIInfoList>
+    	<!-- [count, count_next) 特效，UI底板，是否展示形象(0否1是)，isVipEffect是否显示vip特效(0否1是)-->
+    	<uiinfo count="10" path="ui_effect/videoroom/videoroom_mingpai_01.spe" uir="Znew_splwmpCback" isVipEffect="1"/>
+    	<uiinfo count="30" path="ui_effect/videoroom/videoroom_mingpai_02.spe" effectFullScreen="ui_effect/videoroom/videoroom_mingpai_02_qp.spe" uir="Znew_splwmpCback" isVipEffect="1"/>
+			</UIInfoList>
+    <DropList> 
+    	<!-- 下拉列表选项-->
+			<item count="1" str=" 1 " /> 
+			<item count="10" str=" 10 想亲亲你" />
+    </DropList>
+	</GiftData>
+	<!-- 飞屏哨子-->
+	<WhistleProp>
+	    <Price>199</Price> <!-- 飞屏哨子价格-->
+		<Wealth>199</Wealth> <!-- 飞屏哨子增加的财富值-->
+		<Starlight>199</Starlight> <!-- 飞屏哨子增加的主播星耀值-->
+		<Affinity>199</Affinity> <!-- 飞屏哨子增加的亲密度-->
+		<Popularity>0</Popularity> <!-- 飞屏哨子增加的人气值-->
+		<AddGiftPoolHeight>1990</AddGiftPoolHeight> <!-- 飞屏哨子增加的礼物池高度-->
+	</WhistleProp>
+		<!-- 超新星喇叭-->
+	<SuperStarHorn>
+	    <Price>199</Price> <!-- 超新星喇叭价格-->
+		<Wealth>199</Wealth> <!-- 超新星喇叭增加的财富值-->
+		<Starlight>0</Starlight> <!-- 超新星喇叭增加的主播星耀值-->
+		<Affinity>199</Affinity> <!-- 超新星喇叭增加的亲密度-->
+		<Popularity>0</Popularity> <!-- 超新星喇叭增加的人气值-->
+		<AddGiftPoolHeight>1990</AddGiftPoolHeight> <!-- 超新星喇叭增加的礼物池高度-->
+	</SuperStarHorn>
+		<!-- 免费礼物 -->
+	<FreeGift gain_interval="10" gain_limit="30" carry_limit="10" />
+</VideoGiftCfg>

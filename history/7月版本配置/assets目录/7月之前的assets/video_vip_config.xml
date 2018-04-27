@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="gb2312" standalone="yes" ?>
+<VideoVipConfig>
+	<!-- level指的是VIP的等级 level值越高，等级越高  -->
+	<Vip level="1">
+		<!--开通VIP的价格，day指的是开通的时长，cost指的是价格（炫贝）-->
+		<Start>
+			<Item day="30" cost="500"/>
+		</Start>
+		<!--续费VIP的价格，day表示续费的时长，cost表示续费的价格（炫贝）-->
+		<Renewal>
+			<Item day="30" cost="400"/>
+			<Item day="60" cost="700"/>
+			<Item day="90" cost="850"/>
+	
+		</Renewal>
+		<!--入场公告，value的值为1表示文字公告-->
+		<EnterBrodcast>1</EnterBrodcast>
+		<!--免费飞屏数量-->
+		<FreeWhistle>1</FreeWhistle>
+		<!--有限进入人满房间的人数上限-->
+		<ExtraRoomCapacity>0</ExtraRoomCapacity>
+		<!--
+		防禁言配置，
+		该数字表示对应的守护等级id，表示可以防止该守护及低于该守护的禁言
+		比如配置为50，而50是【高级守护】的id
+		那么表示可以防止【高级守护】及更低级守护的禁言，而不能防止比【高级守护】更nb的守护的禁言
+		-->
+		<ImmuneForbidTalk>0</ImmuneForbidTalk>
+		<!--每日福利，按照通用物品配置来走-->
+		<DailyReward>
+			<Item type="3" male_para="3020002" female_para="3020002" count="20"/>
+		
+		</DailyReward>
+		<!--VIP专属座驾的ID，除了开通VIP可以获得之外，无其他获得方法 没座驾就填0-->
+		<ExclusiveCar>0</ExclusiveCar>
+		<!--VIP专属徽章-->
+		<ExclusiveMedal>2020611</ExclusiveMedal>
+		<!--VIP名称-->
+		<Name>str_video_room_vip_name_1</Name>
+		<!--VIP图标-->
+		<Icon>Znewui_spjinweivip</Icon>
+		<!--在线列表字体-->
+		<Font>font_videoroom_vip1_font_12</Font>
+		<!--飞屏字体-->
+		<WhistleFont>font_videoroom_vip1_font_20</WhistleFont>
+		<!--飞屏资源-->
+		<BounceResource>Znewui_spjinweifpback</BounceResource>
+		<!--名片的底板-->
+		<CardPattern>Znewui_spjinweimpback</CardPattern>
+		<!--VIP进场特效-->
+		<!--特效资源名videoroom_ruchangche_vip（2-4）.spe -->
+		<CarEffect></CarEffect>
+	</Vip>
+	
+	
+	<Vip level="2">
+		<!--开通VIP的价格，day指的是开通的时长，cost指的是价格（炫贝）-->
+		<Start>
+		
+			<Item day="30" cost="1200"/>
+		</Start>
+		<!--续费VIP的价格，day表示续费的时长，cost表示续费的价格（炫贝）-->
+		<Renewal>
+			<Item day="30" cost="1100"/>
+			<Item day="60" cost="2100"/>
+			<Item day="90" cost="2400"/>
+	
+		</Renewal>
+		<!--入场公告，value的值为1表示文字公告-->
+		<EnterBrodcast>1</EnterBrodcast>
+		<!--免费飞屏数量-->
+		<FreeWhistle>2</FreeWhistle>
+		<!--有限进入人满房间的人数上限-->
+		<ExtraRoomCapacity>0</ExtraRoomCapacity>
+		<!--
+		防禁言配置，
+		该数字表示对应的守护等级id，表示可以防止该守护及低于该守护的禁言
+		比如配置为50，而50是【高级守护】的id
+		那么表示可以防止【高级守护】及更低级守护的禁言，而不能防止比【高级守护】更nb的守护的禁言
+		-->
+		<ImmuneForbidTalk>0</ImmuneForbidTalk>
+		<!--每日福利，按照通用物品配置来走-->
+		<DailyReward>
+			<Item type="3" male_para="3020002" female_para="3020002" count="50"/>
+		</DailyReward>
+		<!--VIP专属座驾的ID，除了开通VIP可以获得之外，无其他获得方法 没座驾就填0-->
+		<ExclusiveCar>0</ExclusiveCar>
+		<!--VIP专属徽章-->
+		<ExclusiveMedal>2020610</ExclusiveMedal>
+		<!--VIP名称-->
+		<Name>str_video_room_vip_name_2</Name>
+		<!--VIP图标-->
+		<Icon>Znewui_spqishivip</Icon>
+		<!--在线列表字体-->
+		<Font>font_videoroom_vip2_font_12</Font>
+		<!--飞屏字体-->
+		<WhistleFont>font_videoroom_vip2_font_20</WhistleFont>
+		<!--飞屏资源-->
+		<BounceResource>Znewui_spqishifpback</BounceResource>
+		<!--名片的底板-->
+		<CardPattern>Znewui_spqishimpback</CardPattern>
+		<!--VIP进场特效-->
+		<!--特效资源名videoroom_ruchangche_vip（2-4）.spe -->
+		<CarEffect>ui_effect/videoroom/videoroom_ruchangche_vip2.spe</CarEffect>
+		<!-- 防黑粉：玩家是否享有不受“刚进入视频房间时候，公屏聊天的冷却时间”特权， 0 -不享有， 非0 - 享有 -->
+		<IngorePublicChatCoolDownOnEnter>0</IngorePublicChatCoolDownOnEnter>
+	</Vip>
+	
+	<Vip level="3">
+		<!--开通VIP的价格，day指的是开通的时长，cost指的是价格（炫贝）-->
+		<Start>
+			
+			<Item day="30" cost="8000"/>
+		</Start>
+		<!--续费VIP的价格，day表示续费的时长，cost表示续费的价格（炫贝）-->
+		<Renewal>
+			<Item day="30" cost="7200"/>
+			<Item day="60" cost="13600"/>
+			<Item day="90" cost="18000"/>
+	
+		</Renewal>
+		<!--入场公告，value的值为1表示文字公告-->
+		<EnterBrodcast>1</EnterBrodcast>
+		<!--免费飞屏数量-->
+		<FreeWhistle>5</FreeWhistle>
+		<!--有限进入人满房间的人数上限-->
+		<ExtraRoomCapacity>500</ExtraRoomCapacity>
+		<!--
+		防禁言配置，
+		该数字表示对应的守护等级id，表示可以防止该守护及低于该守护的禁言
+		比如配置为50，而50是【高级守护】的id
+		那么表示可以防止【高级守护】及更低级守护的禁言，而不能防止比【高级守护】更nb的守护的禁言
+		可以从 video_fans_guard.xml中查看守护的ID
+		-->
+		<ImmuneForbidTalk>100</ImmuneForbidTalk>
+		<!--每日福利，按照通用物品配置来走-->
+		<DailyReward>
+			<Item type="3" male_para="3020002" female_para="3020002" count="120"/>
+		</DailyReward>
+		<!--VIP专属座驾的ID，除了开通VIP可以获得之外，无其他获得方法 没座驾就填0-->
+		<ExclusiveCar>0</ExclusiveCar>
+		<!--VIP专属徽章-->
+		<ExclusiveMedal>2020609</ExclusiveMedal>
+		<!--VIP名称-->
+		<Name>str_video_room_vip_name_3</Name>
+		<!--VIP图标-->
+		<Icon>Znewui_spjiangjunvip</Icon>
+		<!--在线列表字体-->
+		<Font>font_videoroom_vip3_font_12</Font>
+		<!--飞屏字体-->
+		<WhistleFont>font_videoroom_vip3_font_20</WhistleFont>
+		<!--飞屏资源-->
+		<BounceResource>Znewui_spjiangjunfpback</BounceResource>
+		<!--名片的底板-->
+		<CardPattern>Znewui_spjiangjunmpback</CardPattern>
+		<!--VIP进场特效-->
+		<!--特效资源名videoroom_ruchangche_vip（2-4）.spe -->
+		<CarEffect>ui_effect/videoroom/videoroom_ruchangche_vip3.spe</CarEffect>
+		<!-- 防黑粉：玩家是否享有不受“刚进入视频房间时候，公屏聊天的冷却时间”特权， 0 -不享有， 非0 - 享有 -->
+		<IngorePublicChatCoolDownOnEnter>1</IngorePublicChatCoolDownOnEnter>
+	</Vip>
+	<Vip level="4">
+		<!--开通VIP的价格，day指的是开通的时长，cost指的是价格（炫贝）-->
+		<Start>
+			
+			<Item day="30" cost="50000"/>
+		</Start>
+		<!--续费VIP的价格，day表示续费的时长，cost表示续费的价格（炫贝）-->
+		<Renewal>
+			<Item day="30" cost="40000"/>
+			<Item day="60" cost="72000"/>
+			<Item day="90" cost="129000"/>
+	
+		</Renewal>
+		<!--入场公告，value的值为1表示文字公告-->
+		<EnterBrodcast>2</EnterBrodcast>
+		<!--入场公告，value的值为1表示全视频房间走马灯-->
+		<EnterBrodcastAllRoom></EnterBrodcastAllRoom>
+		<!--免费飞屏数量-->
+		<FreeWhistle>10</FreeWhistle>
+		<!--免费超新星喇叭数量-->
+		<FreeSuperStarHorn>15</FreeSuperStarHorn>
+		<!--有限进入人满房间的人数上限-->
+		<ExtraRoomCapacity>600</ExtraRoomCapacity>
+		<!--
+		防禁言配置，
+		该数字表示对应的守护等级id，表示可以防止该守护及低于该守护的禁言
+		比如配置为50，而50是【高级守护】的id
+		那么表示可以防止【高级守护】及更低级守护的禁言，而不能防止比【高级守护】更nb的守护的禁言
+		可以从 video_fans_guard.xml中查看守护的ID
+		-->
+		<ImmuneForbidTalk>100</ImmuneForbidTalk>
+		<!--每日福利，按照通用物品配置来走-->
+		<DailyReward>
+			<Item type="3" male_para="3020002" female_para="3020002" count="500"/>
+			<Item type="3" male_para="3018263" female_para="3018263" count="500"/>
+		</DailyReward>
+		<!--VIP专属座驾的ID，除了开通VIP可以获得之外，无其他获得方法 没座驾就填0-->
+		<ExclusiveCar>2044141</ExclusiveCar>
+		<!--VIP专属徽章-->
+		<ExclusiveMedal>2012430</ExclusiveMedal>
+		<!--VIP名称-->
+		<Name>str_video_room_vip_name_4</Name>
+		<!--VIP图标-->
+		<Icon>Znewui_spqinwvip</Icon>
+		<!--在线列表字体-->
+		<Font>font_videoroom_vip4_font_12</Font>
+		<!--飞屏字体-->
+		<WhistleFont>font_videoroom_vip4_font_20</WhistleFont>
+		<!--飞屏资源-->
+		<BounceResource>Znewui_spqinwfpback</BounceResource>
+		<!--名片的底板-->
+		<CardPattern>Znewui_spqinwmpback</CardPattern>
+		<!--VIP进场特效-->
+		<!--特效资源名videoroom_ruchangche_vip（2-4）.spe -->
+		<CarEffect>ui_effect/videoroom/videoroom_ruchangche_vip3.spe</CarEffect>
+		<!-- 防黑粉：玩家是否享有不受“刚进入视频房间时候，公屏聊天的冷却时间”特权， 0 -不享有， 非0 - 享有 -->
+		<IngorePublicChatCoolDownOnEnter>1</IngorePublicChatCoolDownOnEnter>
+	</Vip>
+	<Vip level="5">
+		<!--开通VIP的价格，day指的是开通的时长，cost指的是价格（炫贝）-->
+		<Start>
+			
+			<Item day="30" cost="120000"/>
+		</Start>
+		<!--续费VIP的价格，day表示续费的时长，cost表示续费的价格（炫贝）-->
+		<Renewal>
+			<Item day="30" cost="96000"/>
+			<Item day="60" cost="172800"/>
+			<Item day="90" cost="310000"/>
+	
+		</Renewal>
+		<!--入场公告，value的值为1表示文字公告-->
+		<EnterBrodcast>2</EnterBrodcast>
+		<!--入场公告，value的值为1表示全视频房间走马灯-->
+		<EnterBrodcastAllRoom>1</EnterBrodcastAllRoom>
+		<!--免费飞屏数量-->
+		<FreeWhistle>30</FreeWhistle>
+		<!--免费超新星喇叭数量-->
+		<FreeSuperStarHorn>50</FreeSuperStarHorn>
+		<!--有限进入人满房间的人数上限-->
+		<ExtraRoomCapacity>800</ExtraRoomCapacity>
+		<!--
+		防禁言配置，
+		该数字表示对应的守护等级id，表示可以防止该守护及低于该守护的禁言
+		比如配置为50，而50是【高级守护】的id
+		那么表示可以防止【高级守护】及更低级守护的禁言，而不能防止比【高级守护】更nb的守护的禁言
+		可以从 video_fans_guard.xml中查看守护的ID
+		-->
+		<ImmuneForbidTalk>100</ImmuneForbidTalk>
+		<!--每日福利，按照通用物品配置来走-->
+		<DailyReward>
+			<Item type="3" male_para="3020002" female_para="3020002" count="1500"/>
+			<Item type="3" male_para="3018263" female_para="3018263" count="1500"/>
+			
+		</DailyReward>
+		<!--VIP专属座驾的ID，除了开通VIP可以获得之外，无其他获得方法 没座驾就填0-->
+		<ExclusiveCar>2044142</ExclusiveCar>
+		<!--VIP专属徽章-->
+		<ExclusiveMedal>2012429</ExclusiveMedal>
+		<!--VIP名称-->
+		<Name>str_video_room_vip_name_5</Name>
+		<!--VIP图标-->
+		<Icon>Znewui_sphuangdvip</Icon>
+		<!--在线列表字体-->
+		<Font>font_videoroom_vip5_font_12</Font>
+		<!--飞屏字体-->
+		<WhistleFont>font_videoroom_vip5_font_20</WhistleFont>
+		<!--飞屏资源-->
+		<BounceResource>Znewui_sphuangdfpback</BounceResource>
+		<!--名片的底板-->
+		<CardPattern>Znewui_sphuangdmpback</CardPattern>
+		<!--VIP进场特效-->
+		<!--特效资源名videoroom_ruchangche_vip（2-4）.spe -->
+		<CarEffect>ui_effect/videoroom/videoroom_ruchangche_vip3.spe</CarEffect>
+		<!-- 防黑粉：玩家是否享有不受“刚进入视频房间时候，公屏聊天的冷却时间”特权， 0 -不享有， 非0 - 享有 -->
+		<IngorePublicChatCoolDownOnEnter>1</IngorePublicChatCoolDownOnEnter>
+	</Vip>	
+
+	<!--Vip规则的网址-->
+	<RuleURL value="http://x5.qq.com/act/a20140428may/page03.htm#0"/>
+</VideoVipConfig>

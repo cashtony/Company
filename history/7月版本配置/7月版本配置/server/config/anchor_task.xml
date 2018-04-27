@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="GBK" standalone="yes" ?>
+<AnchorTask>
+ <!-- 
+         星耀值清0和删除已领取任务的时间单位都改为分钟了
+  -->
+	<ClearDailyStarlightTime time="120"/> 
+	<RemoveAnchorTaskTime time="120"/>
+	<RemoveCountPerFrame count="50"/>
+	<StarlightNeeded count="10000"/>
+	<Task id="1">
+		<condition type="1" content="1" />
+		<description desc="str_res_anchor_task_condition1"/>
+	</Task>
+	<Task id="2">
+		<condition type="1" content="2" />
+		<description desc="str_res_anchor_task_condition2"/>
+	</Task>
+</AnchorTask>

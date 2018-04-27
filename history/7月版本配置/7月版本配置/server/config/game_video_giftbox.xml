@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="GB2312"?>
+<GameVideoGiftBox>
+	<!-- 视频房间热度宝箱 -->
+	<GiftBox type="0">
+		<!--
+			可配置多个RewardItems奖励结点，按配置时间生效
+		-->
+		<RewardItems start_time="2014-12-31,9:00" end_time="2015-11-8,00:59">
+			<RewardItem type="3" para1="3089132" para2="3089132" para3="1" probability="25"/>
+			<RewardItem type="3" para1="3041131" para2="3041131" para3="1" probability="25"/>
+			<RewardItem type="3" para1="3020002" para2="3020002" para3="30" probability="25"/>
+		</RewardItems>
+	</GiftBox>
+	<GiftBox type="1">
+		<RewardItems start_time="2014-12-31,9:00" end_time="2015-11-8,00:59">
+			<RewardItem type="3" para1="3042100" para2="3042100" para3="1" probability="25"/>
+			<RewardItem type="3" para1="3070100" para2="3070100" para3="1" probability="25"/>
+			<RewardItem type="3" para1="3020002" para2="3020002" para3="30" probability="25"/>
+		</RewardItems>
+	</GiftBox>
+	<GiftBox type="2">
+		<RewardItems start_time="2014-12-31,9:00" end_time="2015-11-8,00:59">
+			<RewardItem type="3" para1="2045119" para2="2045119" para3="1" probability="25"/>
+			<RewardItem type="3" para1="2048111" para2="2048111" para3="1" probability="25"/>
+			<RewardItem type="3" para1="3020002" para2="3020002" para3="90" probability="25"/>
+		</RewardItems>
+	</GiftBox>
+	<GiftBox type="3">
+		<RewardItems start_time="2014-12-31,9:00" end_time="2015-11-8,00:59">
+			<RewardItem type="3" para1="4011109" para2="4111112" para3="7" probability="25"/>
+			<RewardItem type="3" para1="1040774" para2="1141327" para3="7" probability="25"/>
+			<RewardItem type="3" para1="3020002" para2="3020002" para3="375" probability="25"/>
+		</RewardItems>
+	</GiftBox>
+	<!-- 视频房间惊喜宝箱 -->
+	<GiftBox type="4">
+		<!-- reward_strategy引用到下面RewardStrategy结点的id -->
+		<ActivityRewardMap activity_id="1" reward_strategy="1"/>
+		<ActivityRewardMap activity_id="2" reward_strategy="1"/>
+		<ActivityRewardMap activity_id="3" reward_strategy="1"/>
+		
+		<RewardStrategy id="1">
+			<!--
+				可配置多个RewardItems奖励结点，按配置时间生效
+			-->
+			<RewardItems start_time="2014-12-11,3:00" end_time="2015-12-11,00:59">
+				<RewardItem	type="3" para1="3036100" para2="3036100" para3="1" probability="90" />
+				<RewardItem	type="3" para1="3036101" para2="3036101" para3="1" probability="9" />
+				<RewardItem	type="3" para1="3036102" para2="3036102" para3="1" probability="1" />	
+			</RewardItems>
+		</RewardStrategy>
+		<RewardStrategy id="2">
+			<RewardItems start_time="2014-12-11,3:00" end_time="2015-12-11,00:59">	
+				<RewardItem	type="3" para1="3036100" para2="3036100" para3="1" probability="90" />
+				<RewardItem	type="3" para1="3036101" para2="3036101" para3="1" probability="9" />
+				<RewardItem	type="3" para1="3036102" para2="3036102" para3="1" probability="1" />	
+			</RewardItems>
+		</RewardStrategy>
+	</GiftBox>
+
+
+
+	<GiftBox type="7">
+		<!--
+			可配置多个RewardItems奖励结点，按配置时间生效
+		-->
+		<RewardItems start_time="2015-3-17,0:00" end_time="2015-3-25,0:59" >
+			<RewardItem type="3" para1="3046124" para2="3046124" para3="2" probability="100"/>
+			<RewardItem type="3" para1="3018227" para2="3018227" para3="2" probability="100"/>
+			<RewardItem type="3" para1="3020002" para2="3020002" para3="30" probability="100"/>
+		</RewardItems>
+	</GiftBox>
+	<GiftBox type="8">
+		<!--
+			可配置多个RewardItems奖励结点，按配置时间生效
+		-->
+		<RewardItems start_time="2015-3-17,0:00" end_time="2015-3-25,0:59" >
+			<RewardItem type="3" para1="3041140" para2="3041140" para3="2" probability="100"/>
+			<RewardItem type="3" para1="3068105" para2="3068105" para3="2" probability="100"/>
+			<RewardItem type="3" para1="3020002" para2="3020002" para3="30" probability="100"/>
+		</RewardItems>
+	</GiftBox>
+	<GiftBox type="9">
+		<!--
+			可配置多个RewardItems奖励结点，按配置时间生效
+		-->
+		<RewardItems start_time="2015-3-17,0:00" end_time="2015-3-25,0:59" >
+			<RewardItem type="3" para1="2029107" para2="2029107" para3="2" probability="100"/>
+			<RewardItem type="3" para1="2029116" para2="2029116" para3="2" probability="100"/>
+			<RewardItem type="3" para1="3020002" para2="3020002" para3="90" probability="100"/>
+		</RewardItems>
+	</GiftBox>
+	<GiftBox type="10">
+		<!--
+			可配置多个RewardItems奖励结点，按配置时间生效
+		-->
+		<RewardItems start_time="2015-3-17,0:00" end_time="2015-3-25,0:59" >
+			<RewardItem type="3" para1="4061129" para2="4161129" para3="2" probability="100"/>
+			<RewardItem type="3" para1="7040492" para2="7140568" para3="2" probability="100"/>
+			<RewardItem type="3" para1="3020002" para2="3020002" para3="300" probability="100"/>
+		</RewardItems>
+	</GiftBox>
+	<GiftBox type="11">
+		<!-- reward_strategy引用到下面RewardStrategy结点的id -->
+		<ActivityRewardMap activity_id="1" reward_strategy="1"/>
+		<ActivityRewardMap activity_id="2" reward_strategy="1"/>
+		<ActivityRewardMap activity_id="3" reward_strategy="1"/>
+		
+		<RewardStrategy id="1">
+			<!--
+				可配置多个RewardItems奖励结点，按配置时间生效
+			-->
+			<RewardItems start_time="2014-12-11,3:00" end_time="2015-12-11,00:59">
+				<RewardItem	type="3" para1="3036100" para2="3036100" para3="1" probability="90" />
+				<RewardItem	type="3" para1="3036101" para2="3036101" para3="1" probability="9" />
+				<RewardItem	type="3" para1="3036102" para2="3036102" para3="1" probability="1" />	
+			</RewardItems>
+		</RewardStrategy>
+		<RewardStrategy id="2">
+			<RewardItems start_time="2014-12-11,3:00" end_time="2015-12-11,00:59">	
+				<RewardItem	type="3" para1="3036100" para2="3036100" para3="1" probability="90" />
+				<RewardItem	type="3" para1="3036101" para2="3036101" para3="1" probability="9" />
+				<RewardItem	type="3" para1="3036102" para2="3036102" para3="1" probability="1" />	
+			</RewardItems>
+		</RewardStrategy>
+	</GiftBox>
+	
+	<GiftBox type="13">
+		<!--
+			可配置多个RewardItems奖励结点，按配置时间生效
+		-->
+		<RewardItems start_time="2015-3-17,0:00" end_time="2016-3-25,0:59" >
+			<RewardItem type="3" para1="3046124" para2="3046124" para3="2" probability="100"/>
+			<RewardItem type="3" para1="3018227" para2="3018227" para3="2" probability="100"/>
+			<RewardItem type="3" para1="3020002" para2="3020002" para3="30" probability="100"/>
+		</RewardItems>
+	</GiftBox>
+	<GiftBox type="14">
+		<!--
+			可配置多个RewardItems奖励结点，按配置时间生效
+		-->
+		<RewardItems start_time="2015-3-17,0:00" end_time="2016-3-25,0:59" >
+			<RewardItem type="3" para1="3041140" para2="3041140" para3="2" probability="100"/>
+			<RewardItem type="3" para1="3068105" para2="3068105" para3="2" probability="100"/>
+			<RewardItem type="3" para1="3020002" para2="3020002" para3="30" probability="100"/>
+		</RewardItems>
+	</GiftBox>
+	<GiftBox type="15">
+		<!--
+			可配置多个RewardItems奖励结点，按配置时间生效
+		-->
+		<RewardItems start_time="2015-3-17,0:00" end_time="2046-3-25,0:59" >
+			<RewardItem type="3" para1="2029107" para2="2029107" para3="2" probability="100"/>
+			<RewardItem type="3" para1="2029116" para2="2029116" para3="2" probability="100"/>
+			<RewardItem type="3" para1="3020002" para2="3020002" para3="90" probability="100"/>
+		</RewardItems>
+	</GiftBox>
+	<GiftBox type="16">
+		<!--
+			可配置多个RewardItems奖励结点，按配置时间生效
+		-->
+		<RewardItems start_time="2015-3-17,0:00" end_time="2016-3-25,0:59" >
+			<RewardItem type="3" para1="4061129" para2="4161129" para3="2" probability="100"/>
+			<RewardItem type="3" para1="7040492" para2="7140568" para3="2" probability="100"/>
+			<RewardItem type="3" para1="3020002" para2="3020002" para3="300" probability="100"/>
+		</RewardItems>
+	</GiftBox>
+	
+	
+	<RoomGiftBox>
+		<!-- 视频房间订制热度宝箱 -->
+		<GiftBox type="0">
+			<!--
+				可配置多个RewardItems奖励结点，按配置时间生效
+			-->
+			<RewardItems start_time="2014-12-11,3:00" end_time="2014-12-18,00:59" >
+				<RewardItem type="3" para1="3089127" para2="3089127" para3="1" probability="100"/>
+				<RewardItem type="3" para1="3041134" para2="3041134" para3="1" probability="100"/>
+				<RewardItem type="3" para1="3020002" para2="3020002" para3="20" probability="100"/>
+			</RewardItems>
+			<RewardItems start_time="2014-12-18,9:00" end_time="2014-12-18,17:59" >
+				<RewardItem type="3" para1="3041136" para2="3041136" para3="1" probability="100"/>
+				<RewardItem type="3" para1="3018228" para2="3018228" para3="1" probability="100"/>
+				<RewardItem type="3" para1="3020002" para2="3020002" para3="20" probability="100"/>
+			</RewardItems>
+			<RewardItems start_time="2014-12-18,18:00" end_time="2014-12-18,21:59" >
+				<RewardItem type="3" para1="3041136" para2="3041136" para3="3" probability="100"/>
+				<RewardItem type="3" para1="3018228" para2="3018228" para3="3" probability="100"/>
+				<RewardItem type="3" para1="3020002" para2="3020002" para3="60" probability="100"/>
+			</RewardItems>
+			<RewardItems start_time="2014-12-18,22:00" end_time="2014-12-25,00:59" >
+				<RewardItem type="3" para1="3041136" para2="3041136" para3="1" probability="100"/>
+				<RewardItem type="3" para1="3018228" para2="3018228" para3="1" probability="100"/>
+				<RewardItem type="3" para1="3020002" para2="3020002" para3="20" probability="100"/>
+			</RewardItems>
+			<RewardItems start_time="2014-12-25,9:00" end_time="2014-12-31,00:59" >
+				<RewardItem type="3" para1="3089112" para2="3089112" para3="1" probability="100"/>
+				<RewardItem type="3" para1="2057002" para2="2057002" para3="7" probability="100"/>
+				<RewardItem type="3" para1="3020002" para2="3020002" para3="20" probability="100"/>
+			</RewardItems>
+			<RewardItems start_time="2014-12-31,9:00" end_time="2016-11-8,00:59">
+				<RewardItem type="3" para1="3010000" para2="3010000" para3="1" probability="100"/>
+				<RewardItem type="3" para1="3010001" para2="3010001" para3="1" probability="100"/>
+				<RewardItem type="3" para1="3010002" para2="3010002" para3="1" probability="100"/>
+			</RewardItems>
+		</GiftBox>
+		<GiftBox type="1">
+			<RewardItems start_time="2014-12-11,3:00" end_time="2014-12-18,00:59" >
+				<RewardItem type="3" para1="3057100" para2="3057100" para3="1" probability="100"/>
+				<RewardItem type="3" para1="3036103" para2="3036103" para3="1" probability="100"/>
+				<RewardItem type="3" para1="3020002" para2="3020002" para3="30" probability="100"/>
+			</RewardItems>
+			<RewardItems start_time="2014-12-18,9:00" end_time="2014-12-18,17:59" >
+				<RewardItem type="3" para1="3036103" para2="3036103" para3="1" probability="100"/>
+				<RewardItem type="3" para1="3041139" para2="3041139" para3="1" probability="100"/>
+				<RewardItem type="3" para1="3020002" para2="3020002" para3="20" probability="100"/>
+			</RewardItems>
+			<RewardItems start_time="2014-12-18,18:00" end_time="2014-12-18,21:59" >
+				<RewardItem type="3" para1="3036103" para2="3036103" para3="3" probability="100"/>
+				<RewardItem type="3" para1="3041139" para2="3041139" para3="3" probability="100"/>
+				<RewardItem type="3" para1="3020002" para2="3020002" para3="60" probability="100"/>
+			</RewardItems>
+			<RewardItems start_time="2014-12-18,22:00" end_time="2014-12-25,00:59" >
+				<RewardItem type="3" para1="3036103" para2="3036103" para3="1" probability="100"/>
+				<RewardItem type="3" para1="3041139" para2="3041139" para3="1" probability="100"/>
+				<RewardItem type="3" para1="3020002" para2="3020002" para3="20" probability="100"/>
+			</RewardItems>
+			<RewardItems start_time="2014-12-25,9:00" end_time="2014-12-31,00:59" >
+				<RewardItem type="3" para1="3042100" para2="3042100" para3="1" probability="100"/>
+				<RewardItem type="3" para1="3018274" para2="3018274" para3="5" probability="100"/>
+				<RewardItem type="3" para1="3020002" para2="3020002" para3="20" probability="100"/>
+			</RewardItems>
+			<RewardItems start_time="2014-12-31,9:00" end_time="2016-11-8,00:59">
+				<RewardItem type="3" para1="3036103" para2="3036103" para3="1" probability="100"/>
+				<RewardItem type="3" para1="3018239" para2="3018239" para3="1" probability="100"/>
+				<RewardItem type="3" para1="3020002" para2="3020002" para3="20" probability="100"/>
+			</RewardItems>
+		</GiftBox>
+		<GiftBox type="2">
+			<RewardItems start_time="2014-12-11,3:00" end_time="2014-12-18,00:59" >
+				<RewardItem type="3" para1="2038146" para2="2038146" para3="1" probability="100"/>
+				<RewardItem type="3" para1="2040104" para2="2040104" para3="1" probability="100"/>
+				<RewardItem type="3" para1="3020002" para2="3020002" para3="60" probability="100"/>
+			</RewardItems>
+			<RewardItems start_time="2014-12-18,9:00" end_time="2014-12-18,17:59" >
+				<RewardItem type="3" para1="2048119" para2="2048119" para3="1" probability="100"/>
+				<RewardItem type="3" para1="2045114" para2="2045114" para3="1" probability="100"/>
+				<RewardItem type="3" para1="3020002" para2="3020002" para3="60" probability="100"/>
+			</RewardItems>
+			<RewardItems start_time="2014-12-18,18:00" end_time="2014-12-18,21:59" >
+				<RewardItem type="3" para1="2048119" para2="2048119" para3="7" probability="100"/>
+				<RewardItem type="3" para1="2045114" para2="2045114" para3="7" probability="100"/>
+				<RewardItem type="3" para1="3020002" para2="3020002" para3="180" probability="100"/>
+			</RewardItems>
+			<RewardItems start_time="2014-12-18,22:00" end_time="2014-12-25,00:59" >
+				<RewardItem type="3" para1="2048119" para2="2048119" para3="1" probability="100"/>
+				<RewardItem type="3" para1="2045114" para2="2045114" para3="1" probability="100"/>
+				<RewardItem type="3" para1="3020002" para2="3020002" para3="60" probability="100"/>
+			</RewardItems>
+			<RewardItems start_time="2014-12-25,9:00" end_time="2014-12-31,00:59" >
+				<RewardItem type="3" para1="2029109" para2="2029109" para3="1" probability="100"/>
+				<RewardItem type="3" para1="2040106" para2="2040106" para3="1" probability="100"/>
+				<RewardItem type="3" para1="3020002" para2="3020002" para3="60" probability="100"/>
+			</RewardItems>
+			<RewardItems start_time="2014-12-31,9:00" end_time="2016-11-8,00:59">
+				<RewardItem type="3" para1="2048111" para2="2048111" para3="1" probability="100"/>
+				<RewardItem type="3" para1="2045113" para2="2045113" para3="1" probability="100"/>
+				<RewardItem type="3" para1="3020002" para2="3020002" para3="60" probability="100"/>
+			</RewardItems>
+		</GiftBox>
+		<GiftBox type="3">
+			<RewardItems start_time="2014-12-11,3:00" end_time="2014-12-18,00:59" >
+				<RewardItem type="3" para1="4061104" para2="4161104" para3="1" probability="100"/>
+				<RewardItem type="3" para1="7040636" para2="7140733" para3="1" probability="100"/>
+				<RewardItem type="3" para1="3020002" para2="3020002" para3="250" probability="100"/>
+			</RewardItems>
+			<RewardItems start_time="2014-12-18,9:00" end_time="2014-12-18,17:59" >
+				<RewardItem type="3" para1="4011108" para2="4111111" para3="7" probability="100"/>
+				<RewardItem type="3" para1="1047020" para2="1147113" para3="7" probability="100"/>
+				<RewardItem type="3" para1="3020002" para2="3020002" para3="250" probability="100"/>
+			</RewardItems>
+			<RewardItems start_time="2014-12-18,18:00" end_time="2014-12-18,21:59" >
+				<RewardItem type="3" para1="4011108" para2="4111111" para3="15" probability="100"/>
+				<RewardItem type="3" para1="1047020" para2="1147113" para3="15" probability="100"/>
+				<RewardItem type="3" para1="3020002" para2="3020002" para3="750" probability="100"/>
+			</RewardItems>
+			<RewardItems start_time="2014-12-18,22:00" end_time="2014-12-25,00:59" >
+				<RewardItem type="3" para1="4011108" para2="4111111" para3="7" probability="100"/>
+				<RewardItem type="3" para1="1047020" para2="1147113" para3="7" probability="100"/>
+				<RewardItem type="3" para1="3020002" para2="3020002" para3="250" probability="100"/>
+			</RewardItems>
+			<RewardItems start_time="2014-12-25,9:00" end_time="2014-12-31,00:59" >
+				<RewardItem type="3" para1="4061111" para2="4161111" para3="1" probability="100"/>
+				<RewardItem type="3" para1="7040565" para2="7140651" para3="7" probability="100"/>
+				<RewardItem type="3" para1="3020002" para2="3020002" para3="250" probability="100"/>
+			</RewardItems>
+			<RewardItems start_time="2014-12-31,9:00" end_time="2016-11-8,00:59">
+				<RewardItem type="3" para1="4011109" para2="4111112" para3="7" probability="100"/>
+				<RewardItem type="3" para1="1040140" para2="1140203" para3="7" probability="100"/>
+				<RewardItem type="3" para1="3020002" para2="3020002" para3="250" probability="100"/>
+			</RewardItems>
+		</GiftBox>
+		<Room id="2"/>
+		<Room id="1001"/>
+	</RoomGiftBox>
+	<RoomGiftBox><!--小窝房间订制热度宝箱奖励-->
+		<GiftBox type="7">
+			<!--
+				可配置多个RewardItems奖励结点，按配置时间生效
+			-->
+			<RewardItems start_time="2015-3-17,0:00" end_time="2016-3-25,0:59" >
+				<RewardItem type="3" para1="3046124" para2="3046124" para3="2" probability="100"/>
+				<RewardItem type="3" para1="3018227" para2="3018227" para3="2" probability="100"/>
+				<RewardItem type="3" para1="3020002" para2="3020002" para3="30" probability="100"/>
+			</RewardItems>
+		</GiftBox>
+		<GiftBox type="8">
+			<!--
+				可配置多个RewardItems奖励结点，按配置时间生效
+			-->
+			<RewardItems start_time="2015-3-17,0:00" end_time="2016-3-25,0:59" >
+				<RewardItem type="3" para1="3041140" para2="3041140" para3="2" probability="100"/>
+				<RewardItem type="3" para1="3068105" para2="3068105" para3="2" probability="100"/>
+				<RewardItem type="3" para1="3020002" para2="3020002" para3="30" probability="100"/>
+			</RewardItems>
+		</GiftBox>
+		<GiftBox type="9">
+			<!--
+				可配置多个RewardItems奖励结点，按配置时间生效
+			-->
+			<RewardItems start_time="2015-3-17,0:00" end_time="2016-3-25,0:59" >
+				<RewardItem type="3" para1="2029107" para2="2029107" para3="2" probability="100"/>
+				<RewardItem type="3" para1="2029116" para2="2029116" para3="2" probability="100"/>
+				<RewardItem type="3" para1="3020002" para2="3020002" para3="90" probability="100"/>
+			</RewardItems>
+		</GiftBox>
+		<GiftBox type="10">
+			<!--
+				可配置多个RewardItems奖励结点，按配置时间生效
+			-->
+			<RewardItems start_time="2015-3-17,0:00" end_time="2016-3-25,0:59" >
+				<RewardItem type="3" para1="4061129" para2="4161129" para3="2" probability="100"/>
+				<RewardItem type="3" para1="7040492" para2="7140568" para3="2" probability="100"/>
+				<RewardItem type="3" para1="3020002" para2="3020002" para3="300" probability="100"/>
+			</RewardItems>
+		</GiftBox>
+		<Room id="9"/>
+		<Room id="10"/>
+	</RoomGiftBox>
+	<RoomGiftBox><!--演唱会房间订制热度宝箱奖励-->
+		<GiftBox type="13">
+			<!--
+				可配置多个RewardItems奖励结点，按配置时间生效
+			-->
+			<RewardItems start_time="2015-3-17,0:00" end_time="2016-3-25,0:59" >
+				<RewardItem type="3" para1="3046124" para2="3046124" para3="2" probability="100"/>
+				<RewardItem type="3" para1="3018227" para2="3018227" para3="2" probability="100"/>
+				<RewardItem type="3" para1="3020002" para2="3020002" para3="30" probability="100"/>
+			</RewardItems>
+		</GiftBox>
+		<GiftBox type="14">
+			<!--
+				可配置多个RewardItems奖励结点，按配置时间生效
+			-->
+			<RewardItems start_time="2015-3-17,0:00" end_time="2016-3-25,0:59" >
+				<RewardItem type="3" para1="3041140" para2="3041140" para3="2" probability="100"/>
+				<RewardItem type="3" para1="3068105" para2="3068105" para3="2" probability="100"/>
+				<RewardItem type="3" para1="3020002" para2="3020002" para3="30" probability="100"/>
+			</RewardItems>
+		</GiftBox>
+		<GiftBox type="15">
+			<!--
+				可配置多个RewardItems奖励结点，按配置时间生效
+			-->
+			<RewardItems start_time="2015-3-17,0:00" end_time="2016-3-25,0:59" >
+				<RewardItem type="3" para1="2029107" para2="2029107" para3="2" probability="100"/>
+				<RewardItem type="3" para1="2029116" para2="2029116" para3="2" probability="100"/>
+				<RewardItem type="3" para1="3020002" para2="3020002" para3="90" probability="100"/>
+			</RewardItems>
+		</GiftBox>
+		<GiftBox type="16">
+			<!--
+				可配置多个RewardItems奖励结点，按配置时间生效
+			-->
+			<RewardItems start_time="2015-3-17,0:00" end_time="2016-3-25,0:59" >
+				<RewardItem type="3" para1="4061129" para2="4161129" para3="2" probability="100"/>
+				<RewardItem type="3" para1="7040492" para2="7140568" para3="2" probability="100"/>
+				<RewardItem type="3" para1="3020002" para2="3020002" para3="300" probability="100"/>
+			</RewardItems>
+		</GiftBox>
+		<Room id="123"/>
+	</RoomGiftBox>
+</GameVideoGiftBox>

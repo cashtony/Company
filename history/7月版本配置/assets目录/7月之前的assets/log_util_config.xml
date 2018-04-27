@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="gb2312" standalone="yes" ?>
+<Logs>
+		<!-- 用Log表示一个日志类别 name表示类别  priority优先级  
+		filename如果需要输出到不同的文件中可以设置filename，否则不进行设置；
+		可以设置相同的文件名，这样不同的类别可以在相同的文件中一起输出 -->
+	<log name="all" priority="700" />
+    <Log name="star_client" priority="700" filename = "star_client" />
+    <Log name="GAME_HALL_UI" priority="700" />
+    <Log name="NetLog" priority="700" />
+    <Log name="NetStatLog" priority="700" />
+    <Log name="SystemLog" priority="700" />
+    <Log name="tankcombat_client" priority="700" />
+</Logs>

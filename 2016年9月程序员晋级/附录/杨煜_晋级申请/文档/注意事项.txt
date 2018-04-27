@@ -1,0 +1,4 @@
+1.如果要读取resource等资源,必须使用MainFragmentActivity.getResource读取,直接R.XXX是不行的!
+2.寄生apk与宿主不可导入相同的包!在我们的工程里,都以宿主的包为准!
+3.寄生apk需要在Properties中的java Build Path中,将连接jar包与宿主导入工程.不准导入lib!!!
+4.与宿主使用的jar包不允许冲突,不然某些机型上回出现NoClassDefFoundError!

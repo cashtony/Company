@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="GBK"?>
+<!--
+    奖励类型：
+        1       经验
+        2       梦幻币
+        3       梦幻币房间礼物
+-->
+<AnchorTaskReward>
+	<Reward type="3" male="30" female="30" count="1" weight="15" />
+	<Reward type="3" male="30" female="30" count="2" weight="14" />
+	<Reward type="3" male="30" female="30" count="3" weight="8" />
+	<Reward type="3" male="31" female="31" count="1" weight="14" />
+	<Reward type="3" male="31" female="31" count="2" weight="13" />
+	<Reward type="3" male="31" female="31" count="3" weight="8" />
+	<Reward type="3" male="32" female="32" count="1" weight="3" />
+	<Reward type="2" male="0" female="0" count="50" weight="13" />
+	<Reward type="2" male="0" female="0" count="100" weight="4" />
+	<Reward type="1" male="0" female="0" count="50" weight="8" />
+</AnchorTaskReward>

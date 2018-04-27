@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="GB2312"?>
+<AnchorNest>
+	<!--各种获得小窝人气值的对应参数-->
+	<PopularityPara>
+		<NormalSupport>10</NormalSupport><!--普通捧场-->
+		<AdvancedSupport>50</AdvancedSupport><!--高级捧场-->
+		<Quest>20</Quest><!--小窝任务-->
+		<Stay>5</Stay><!--小窝停留-->
+		<FreeGift>1</FreeGift><!--免费礼物-->
+		<GuildGift>7</GuildGift><!--后援团成员赠送付费礼物，1炫贝对应值-->
+		<UnguildGift>5</UnguildGift><!--非后援团成员赠送付费礼物，1炫贝对应值-->
+	</PopularityPara>
+	<!--小窝人气梯度递减
+	grade为梯度值
+	reduce为减少的值-->
+	<PopularityDailyReduce>
+		<enum grade="100" reduce="10"/>
+		<enum grade="500" reduce="20"/>
+		<enum grade="10000" reduce="50"/>
+	</PopularityDailyReduce>
+	<!--小窝相册上限-->
+	<MaxPicCount count = "4"/>
+	<!--双周星耀冻结点-->
+	<TwoweekStarlightFreeze value = "1000"/>
+</AnchorNest>

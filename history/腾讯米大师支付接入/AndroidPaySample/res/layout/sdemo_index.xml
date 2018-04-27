@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <Button 
+	android:text="开通包月(应用不传购买月数)" 
+	android:id="@+id/MonthwithoutSaveNumberBtn"
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content">
+	</Button>
+	
+    <Button 
+	android:text="开通包月(应用传递购买月数)" 
+	android:id="@+id/MonthwithSaveNumberBtn"
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content">
+	</Button>
+	
+    <Button 
+	android:text="订阅型(应用不传数量)" 
+	android:id="@+id/SubScribewithoutSaveNumberBtn"
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content">
+	</Button>
+	
+    <Button 
+	android:text="订阅型(应用传数量)" 
+	android:id="@+id/SubScribewithSaveNumberBtn"
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content">
+	</Button>
+	
+	<Button 
+	android:text="充值游戏币(应用不传默认值)" 
+	android:id="@+id/withoutSaveNumberBtn"
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content">
+	</Button>
+
+	<Button android:text="充值游戏币(应用传默认值  可改)" 
+	android:id="@+id/saveNumberCanChangeBtn"
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content">
+	</Button>
+
+	<Button android:text="营销活动接口指定渠道购买游戏币" 
+	android:id="@+id/saveGameBtn"
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content">
+	</Button>
+	
+	<Button android:text="营销活动接口指定渠道购买道具\n(游戏侧先下订单，无订单无法唤起支付sdk支付)" 
+	android:id="@+id/saveGoodsBtn"
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content">
+	</Button>
+
+</LinearLayout>

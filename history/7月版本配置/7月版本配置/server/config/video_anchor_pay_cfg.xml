@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="GB2312"?>
+<AnchorPayCfg>
+	<!-- 礼物对应支付主播价格 -->	
+	<!-- alienbrain://H3D-131/QQX5_Mainland/exe/resources/level/inventory/video_gift_config.xml 与这个文件要一同修改-->
+	<!-- 该配置涉及到主播分成，由产品人员填写! -->
+	<Gift id="1" coins="0"/>
+	<Gift id="2" coins="1"/>
+	<Gift id="3" coins="9"/>
+	<Gift id="4" coins="199"/>
+	<Gift id="5" coins="499"/>
+	<Gift id="6" coins="1"/>
+	<Gift id="7" coins="499"/>
+	<Gift id="8" coins="1"/>
+	<Gift id="9" coins="499"/>
+	<Gift id="10" coins="1"/>
+	<Gift id="11" coins="1"/>
+	<Gift id="12" coins="9"/>
+	<Gift id="14" coins="499"/>
+	<Gift id="15" coins="1"/>
+	<Gift id="17" coins="9"/>
+	<Gift id="18" coins="199"/>
+	<Gift id="19" coins="998"/>
+	<Gift id="20" coins="699"/>
+	<Gift id="22" coins="199"/>
+	<Gift id="30" coins="0"/>
+	<Gift id="31" coins="0"/>
+	<Gift id="32" coins="0"/>
+	<Gift id="33" coins="9"/>
+	<Gift id="34" coins="199"/>
+	<Gift id="98" coins="199"/>
+	<Gift id="100" coins="998"/>		
+	<!--飞屏哨子对应的主播分成-->
+	<Gift id="3018262" coins="199"/>
+</AnchorPayCfg>

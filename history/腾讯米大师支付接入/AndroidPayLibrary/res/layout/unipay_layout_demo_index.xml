@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ff0"
+    >
+
+	<LinearLayout 
+	android:layout_height="wrap_content"
+	android:layout_marginTop="10dp" 
+	android:orientation="horizontal" 
+	android:layout_width="wrap_content" 
+	android:layout_gravity="center_horizontal">
+	
+	<RadioGroup android:id="@+id/demo_id_loginSig" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		>
+		 
+		<RadioButton 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:text="skey" 
+		android:id="@+id/demo_id_skey" 
+		android:textColor="#333"
+		android:checked="true" />
+		
+		<RadioButton
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:text="微信" 
+		android:textColor="#333"
+		android:id="@+id/demo_id_wechat" />
+	
+		<RadioButton 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:text="手Q" 
+		android:textColor="#333"
+		android:id="@+id/demo_id_kp" />  
+		</RadioGroup>
+		
+		<RadioGroup 
+		android:id="@+id/demo_id_change"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" >
+		<RadioButton 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:text="游戏未指定 "
+		android:textColor="#333"
+		android:checked="true" 
+		android:id="@+id/demo_id_noNum" />
+		
+		<RadioButton 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:text="定额 可改"
+		android:textColor="#333"
+		android:id="@+id/demo_id_canchange" />
+		
+		<RadioButton 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:text="定额不可改"
+		android:textColor="#333"
+		android:id="@+id/demo_id_nochange" />
+		
+		<RadioButton 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:text="指定渠道不带活动号"
+		android:textColor="#333"
+		android:id="@+id/demo_id_setChannel" />
+	
+		<RadioButton 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:text="指定渠道带活动号"
+		android:textColor="#333"
+		android:id="@+id/demo_id_setChannelWithMarket" />
+		
+		</RadioGroup>
+		
+		<RadioGroup 
+		android:id="@+id/demo_id_buyType" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" >
+		<RadioButton 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:text="游戏币"
+		android:textColor="#333"
+		android:checked="true" 
+		android:id="@+id/demo_id_game" />
+		
+		<RadioButton 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:text="道具"
+		android:textColor="#333"
+		android:id="@+id/demo_id_goods" />
+		
+		<RadioButton 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:text="包月"
+		android:textColor="#333"
+		android:id="@+id/demo_id_month" />
+		<RadioButton 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:text="Q币"
+		android:textColor="#333"
+		android:id="@+id/demo_id_QB" 
+		android:visibility="visible"/>
+	
+		</RadioGroup>
+
+		</LinearLayout>
+		
+		<LinearLayout
+	   android:layout_marginTop="5dp"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center_horizontal" 
+       android:paddingRight="5dp"
+       >
+		
+			<LinearLayout
+			   android:layout_marginTop="5dp"
+		       android:layout_width="100dp"
+		       android:layout_height="wrap_content"
+		       android:layout_gravity="center_horizontal" 
+		       android:paddingRight="5dp"
+		       android:background="@drawable/unipay_drawable_inputbg" 
+		       >
+		   
+			<TextView
+				android:background="@null"
+				android:text="购买数量:" 
+				android:layout_gravity="center_vertical" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"/>
+		
+			<EditText
+				android:text="2"
+				android:layout_marginLeft="5dp"
+				android:background="@null"
+				android:id="@+id/demo_id_saveNum" 
+				android:layout_height="fill_parent" 
+				android:gravity="center_vertical"
+				android:layout_width="30dp" />
+			
+		
+			</LinearLayout>
+			
+				
+		</LinearLayout>
+<!-- 		<Button 
+		android:text="横竖屏切换" 
+		android:id="@+id/demo_id_orientation" 
+		android:layout_width="260dp" 
+		android:layout_height="wrap_content" 
+		android:layout_gravity="center_horizontal" 
+		android:layout_marginTop="10dp"
+		>
+		</Button> -->
+			
+		<Button 
+		android:text="确认" 
+		android:id="@+id/demo_id_buy" 
+		android:layout_width="260dp" 
+		android:layout_height="wrap_content" 
+		android:layout_gravity="center_horizontal" 
+		android:layout_marginTop="5dp"
+		>
+		</Button>
+		
+		<Button 
+		android:text="横竖屏" 
+		android:id="@+id/demo_id_report" 
+		android:layout_width="260dp" 
+		android:layout_height="wrap_content" 
+		android:layout_gravity="center_horizontal" 
+		android:layout_marginTop="5dp"
+		>
+		</Button>
+
+	<LinearLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center_horizontal"
+	    android:layout_marginTop="5dp" >
+
+	<Button 
+		android:text="道具下单" 
+		android:id="@+id/goodsToken" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:layout_gravity="center_horizontal" 
+		android:layout_marginTop="5dp"
+		/>
+		<Button 
+		android:text="游戏币买道具" 
+		android:id="@+id/buyprops" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:layout_gravity="center_horizontal" 
+		android:layout_marginTop="5dp"
+		/>
+
+		<Button 
+		android:text="直接赠送" 
+		android:id="@+id/present" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:layout_gravity="center_horizontal" 
+		android:layout_marginTop="5dp"
+		/>
+					
+	</LinearLayout>
+
+	<LinearLayout
+	    android:visibility="gone"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center_horizontal"
+	    android:layout_marginTop="5dp" >
+
+							<Button 
+		android:text="余额查询" 
+		android:id="@+id/getBalance" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:layout_gravity="center_horizontal" 
+		android:layout_marginTop="5dp"
+		/>
+		<Button 
+		android:text="直接扣游戏币" 
+		android:id="@+id/pay" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:layout_gravity="center_horizontal" 
+		android:layout_marginTop="5dp"
+		/>
+		<Button 
+		android:text="取消扣费" 
+		android:id="@+id/cancelpay" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:layout_gravity="center_horizontal" 
+		android:layout_marginTop="5dp"
+		/>						
+		</LinearLayout>
+		<LinearLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+	    
+
+	</LinearLayout>
+	
+		<TextView
+				android:background="@null"
+				android:text="结果页面预埋接口传参:" 
+				android:layout_gravity="center_vertical" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"/>
+		
+		<LinearLayout
+	   android:layout_marginTop="5dp"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center_horizontal" 
+       android:paddingRight="5dp"
+       >
+		
+			<LinearLayout
+			   android:layout_marginTop="5dp"
+		       android:layout_width="100dp"
+		       android:layout_height="wrap_content"
+		       android:layout_gravity="center_horizontal" 
+		       android:paddingRight="5dp"
+		       android:background="@drawable/unipay_drawable_inputbg" 
+		       >
+		   
+			<TextView
+				android:background="@null"
+				android:text="offerId:" 
+				android:layout_gravity="center_vertical" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"/>
+		
+			<EditText
+				android:text="1450000357"
+				android:layout_marginLeft="5dp"
+				android:background="@null"
+				android:id="@+id/demo_id_offerId" 
+				android:layout_height="fill_parent" 
+				android:gravity="center_vertical"
+				android:layout_width="30dp" />
+			
+		
+			</LinearLayout>
+			
+				<LinearLayout
+			   android:layout_marginTop="5dp"
+		       android:layout_width="100dp"
+		       android:layout_height="wrap_content"
+		       android:layout_gravity="center_horizontal" 
+		       android:paddingRight="5dp"
+		       android:background="@drawable/unipay_drawable_inputbg" 
+		       >
+		   
+			<TextView
+				android:background="@null"
+				android:text="是否带订单" 
+				android:layout_gravity="center_vertical" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"/>
+		
+			<EditText
+				android:text="0"
+				android:layout_marginLeft="5dp"
+				android:background="@null"
+				android:id="@+id/demo_id_isToken" 
+				android:layout_height="fill_parent" 
+				android:gravity="center_vertical"
+				android:layout_width="30dp" />
+			
+		
+			</LinearLayout>
+			
+				<LinearLayout
+			   android:layout_marginTop="5dp"
+		       android:layout_width="100dp"
+		       android:layout_height="wrap_content"
+		       android:layout_gravity="center_horizontal" 
+		       android:paddingRight="5dp"
+		       android:background="@drawable/unipay_drawable_inputbg" 
+		       >
+		   
+			<TextView
+				android:background="@null"
+				android:text="是否可改" 
+				android:layout_gravity="center_vertical" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"/>
+		
+			<EditText
+				android:text="1"
+				android:layout_marginLeft="5dp"
+				android:background="@null"
+				android:id="@+id/demo_id_goodsCanChange" 
+				android:layout_height="fill_parent" 
+				android:gravity="center_vertical"
+				android:layout_width="30dp" />
+			
+		
+			</LinearLayout>
+		</LinearLayout>
+		
+		<LinearLayout
+	   android:layout_marginTop="5dp"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center_horizontal" 
+       android:paddingRight="5dp"
+       >
+		
+			<LinearLayout
+			   android:layout_marginTop="5dp"
+		       android:layout_width="100dp"
+		       android:layout_height="wrap_content"
+		       android:layout_gravity="center_horizontal" 
+		       android:paddingRight="5dp"
+		       android:background="@drawable/unipay_drawable_inputbg" 
+		       >
+		   
+			<TextView
+				android:background="@null"
+				android:text="productid:" 
+				android:layout_gravity="center_vertical" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"/>
+		
+			<EditText
+				android:text="GD2014040211165804588286"
+				android:layout_marginLeft="5dp"
+				android:background="@null"
+				android:id="@+id/demo_id_productid" 
+				android:layout_height="fill_parent" 
+				android:gravity="center_vertical"
+				android:layout_width="30dp" />
+			
+		
+			</LinearLayout>
+			
+				<LinearLayout
+			   android:layout_marginTop="5dp"
+		       android:layout_width="100dp"
+		       android:layout_height="wrap_content"
+		       android:layout_gravity="center_horizontal" 
+		       android:paddingRight="5dp"
+		       android:background="@drawable/unipay_drawable_inputbg" 
+		       >
+		   
+			<TextView
+				android:background="@null"
+				android:text="tokenUrl" 
+				android:layout_gravity="center_vertical" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"/>
+		
+			<EditText
+				android:text="2"
+				android:layout_marginLeft="5dp"
+				android:background="@null"
+				android:id="@+id/demo_id_token" 
+				android:layout_height="fill_parent" 
+				android:gravity="center_vertical"
+				android:layout_width="30dp" />
+			
+		
+			</LinearLayout>
+			
+			
+				<LinearLayout
+			   android:layout_marginTop="5dp"
+		       android:layout_width="100dp"
+		       android:layout_height="wrap_content"
+		       android:layout_gravity="center_horizontal" 
+		       android:paddingRight="5dp"
+		       android:background="@drawable/unipay_drawable_inputbg" 
+		       >
+		   
+			<TextView
+				android:background="@null"
+				android:text="充值类型" 
+				android:layout_gravity="center_vertical" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"/>
+		
+			<EditText
+				android:text="1"
+				android:layout_marginLeft="5dp"
+				android:background="@null"
+				android:id="@+id/demo_id_saveType" 
+				android:layout_height="fill_parent" 
+				android:gravity="center_vertical"
+				android:layout_width="30dp" />
+			
+		
+			</LinearLayout>
+			
+		</LinearLayout>
+		<TextView
+				android:background="@null"
+				android:text="充值类型: 0-游戏币 ， 1-道具" 
+				android:layout_gravity="center_vertical" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"/>
+</LinearLayout>

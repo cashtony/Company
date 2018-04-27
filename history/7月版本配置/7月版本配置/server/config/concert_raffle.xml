@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="GBK" standalone="yes" ?>
+<Raffle>
+	<Exclude>
+		<!-- 在线人数上限，排除的qq尾号个数 -->
+		<range up="20000" exclude_count="0"/> <!--20000人以下排除0个 -->
+		<range up="30000" exclude_count="2"/> <!--30000人到20000人， 排除2个 -->
+		<range up="40000" exclude_count="4"/>
+		<range up="50000" exclude_count="5"/>
+		<range up="60000" exclude_count="6"/>
+		<range up="70000" exclude_count="7"/>
+		<range up="200000" exclude_count="8"/>
+		<range up="500000" exclude_count="9"/>	
+	</Exclude>	
+	<!--中奖列表每页人数 -->
+	<PlayerCountPerPage count="8" />
+	<!-- 每轮中奖名单最大长度 -->
+	<LuckyPlayerListLength count="1000" />
+	<!-- 期望真正到达video_activity_server的玩家数量，除总的奖品数量即是在vas上的中奖概率, 大前提是到达vas :-) -->
+	<ExpectTotalPlayer count="5000"/>
+	<!-- 检查中奖列表增量的周期,单位秒 -->
+	<PlayerListPeriod count="5" />
+	<!-- 清空中奖列表时间 -->
+	<ClearTime time="120" />
+	<!-- 是否用于测试, 现网一定要置为0 -->
+	<IsForTest test="1" />
+</Raffle>

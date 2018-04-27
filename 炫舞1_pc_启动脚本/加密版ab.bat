@@ -1,0 +1,21 @@
+ÿş
+echo off
+net use \\h3d-131\ab_proj$$ /del
+net use \\h3d-131\IPC$ /del
+net use \\h3d-ab01\ab_proj$$ /del
+net use \\h3d-ab01\IPC$ /del
+net use \\h3d-ab02\ab_proj$$ /del
+net use \\h3d-ab02\IPC$ /del
+
+@echo É¾³ıÁ´½ÓÍê³É
+net use  \\h3d-131   /user:administrator h3d!#!
+echo µÇÂ¼h3d-131³É¹¦
+
+net use  \\h3d-ab01   /user:abuser abuser
+echo µÇÂ¼h3d-ab01³É¹¦
+
+net use  \\h3d-ab02   /user:abuser abuser
+
+echo µÇÂ¼h3d-ab02³É¹¦
+
+pause

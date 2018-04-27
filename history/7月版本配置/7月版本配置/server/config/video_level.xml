@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="gb2312" standalone="yes" ?>
+<video_level>
+	<daily_coin_gift_exp>3000</daily_coin_gift_exp>
+    <max_level>60</max_level>
+    <levels>
+        <level level="1" exp="0"/>
+        <level level="2" exp="70"/>
+        <level level="3" exp="120"/>
+        <level level="4" exp="190"/>
+        <level level="5" exp="280"/>
+        <level level="6" exp="390"/>
+        <level level="7" exp="520"/>
+        <level level="8" exp="670"/>
+        <level level="9" exp="840"/>
+        <level level="10" exp="1030"/>
+        <level level="11" exp="1240"/>
+        <level level="12" exp="1470"/>
+        <level level="13" exp="1720"/>
+        <level level="14" exp="1990"/>
+        <level level="15" exp="2280"/>
+        <level level="16" exp="2590"/>
+        <level level="17" exp="2920"/>
+        <level level="18" exp="3270"/>
+        <level level="19" exp="3640"/>
+        <level level="20" exp="4030"/>
+        <level level="21" exp="4440"/>
+        <level level="22" exp="4870"/>
+        <level level="23" exp="5320"/>
+        <level level="24" exp="5790"/>
+        <level level="25" exp="6280"/>
+        <level level="26" exp="6790"/>
+        <level level="27" exp="7320"/>
+        <level level="28" exp="7870"/>
+        <level level="29" exp="8440"/>
+        <level level="30" exp="9030"/>
+        <level level="31" exp="9640"/>
+        <level level="32" exp="10270"/>
+        <level level="33" exp="10920"/>
+        <level level="34" exp="11590"/>
+        <level level="35" exp="12280"/>
+        <level level="36" exp="12990"/>
+        <level level="37" exp="13720"/>
+        <level level="38" exp="14470"/>
+        <level level="39" exp="15240"/>
+        <level level="40" exp="16030"/>
+        <level level="41" exp="16840"/>
+        <level level="42" exp="17670"/>
+        <level level="43" exp="18520"/>
+        <level level="44" exp="19390"/>
+        <level level="45" exp="20280"/>
+        <level level="46" exp="21190"/>
+        <level level="47" exp="22120"/>
+        <level level="48" exp="23070"/>
+        <level level="49" exp="24040"/>
+        <level level="50" exp="25030"/>
+        <level level="51" exp="26040"/>
+        <level level="52" exp="27070"/>
+        <level level="53" exp="28120"/>
+        <level level="54" exp="29190"/>
+        <level level="55" exp="30280"/>
+        <level level="56" exp="31390"/>
+        <level level="57" exp="32520"/>
+        <level level="58" exp="33670"/>
+        <level level="59" exp="34840"/>
+        <level level="60" exp="36030"/>   
+    </levels>
+</video_level>

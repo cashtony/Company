@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="gb2312" standalone="yes" ?>
+<config>
+	<!--
+	============   配置说明   ============
+	id：表示房间类型。意义如下：
+			0：推荐房间
+			1：娱乐表演
+			2：测试房间
+			3: 人气主播
+			4：新星主播
+			5：星级主播
+			6：梦想新主播
+	
+	注意：在客户端展现的顺序与各个category节点(将每个节点作为一个整体，可以调整顺序)的在本xml中的配置顺序一致
+			
+	name：房间类型名称
+	icon：房间类型图标
+	-->
+  <video_room_category>
+	  <category id="0" name="推荐房间" icon="Znewui_shipinpind08z" /> 
+	  <category id="3" name="人气主播" icon="Znewui_shipinpind10z" /> 	  
+	  <category id="4" name="新星主播" icon="Znewui_shipinpind11z" /> 
+  </video_room_category>  
+  <audio_room_category>
+	  <category id="0" name="推荐房间" icon="Znewui_shipinpind08z" /> 
+	  <category id="3" name="人气主播" icon="Znewui_shipinpind10z" /> 	  
+	  <category id="4" name="新星主播" icon="Znewui_shipinpind11z" /> 	  
+  </audio_room_category>
+</config>

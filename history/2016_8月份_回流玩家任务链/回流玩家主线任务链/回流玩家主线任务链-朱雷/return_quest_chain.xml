@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="GBK"?>
+<!--回流玩家任务链配置 对应策划案子(知识库ID4558)-->
+<ReturnQuestChain>
+  <!--回流任务周期库-->
+  <Periods>
+    <!--每一期内，不用回流类型（普通、紫星、精准三种）都会有自己的两条任务链
+      id 周期id。**新加的周期<Period/>，它必须是所有<Period/>中最上面的且id必须递增。**
+      <ReturnPlayer/> 不同回流类型玩家有自己的任务链
+        type 回流类型 1 普通 2 紫星 3 精准
+        <Chains/> 包含的任务链，请不要重复包含。任务链的配置见本文件后面的说明"回流任务链库"
+        <Rewards/> 奖励的内容
+          type=1-经验 para1表示经验值  
+          type=2-G币 para1表示G币数
+          type=3-物品 para1表示男性物品id，para2表示女性物品id，para3表示数量/天数
+    -->
+    <Period id="1">
+      <ReturnPlayer type="1">
+        <Chains>
+          <Chain id="1" />
+          <Chain id="2" />
+        </Chains>
+        <Rewards>
+          <RewardItem type="3" para1="3046115" para2="3046115" para3="1"/>
+          <RewardItem type="3" para1="3046102" para2="3046102" para3="1"/>
+        </Rewards>
+      </ReturnPlayer>
+      <ReturnPlayer type="2">
+        <Chains>
+          <Chain id="1" />
+          <Chain id="2" />
+        </Chains>
+        <Rewards>
+          <RewardItem type="3" para1="3046115" para2="3046115" para3="1"/>
+          <RewardItem type="3" para1="3046102" para2="3046102" para3="1"/>
+        </Rewards>
+      </ReturnPlayer>
+    </Period>
+  </Periods>
+
+  <!--回流任务链库-->
+  <Chains>
+    <!--每个任务链
+      id 任务链id。新加任务链请自增id，id数不要重复了。
+      <Quests/> 包含的任务，请不要重复包含。任务按照这里的顺序一个个完成。任务的配置见本文件后面的说明"回流任务库"
+      <Rewards/> 奖励的内容
+    -->
+    <Chain id="1">
+      <Quests>
+        <Quest id="1" />
+        <Quest id="2" />
+      </Quests>
+      <Rewards>
+        <RewardItem type="3" para1="3046115" para2="3046115" para3="1"/>
+        <RewardItem type="3" para1="3046102" para2="3046102" para3="1"/>
+      </Rewards>
+    </Chain>
+    <Chain id="2">
+      <Quests>
+        <Quest id="2" />
+      </Quests>
+      <Rewards>
+        <RewardItem type="3" para1="3046115" para2="3046115" para3="1"/>
+        <RewardItem type="3" para1="3046102" para2="3046102" para3="1"/>
+      </Rewards>
+    </Chain>
+    <Chain id="3">
+      <Quests>
+        <Quest id="1" />
+      </Quests>
+      <Rewards>
+        <RewardItem type="3" para1="3046115" para2="3046115" para3="1"/>
+        <RewardItem type="3" para1="3046102" para2="3046102" para3="1"/>
+      </Rewards>
+    </Chain>
+  </Chains>
+
+  <!--回流任务库-->
+  <Quests>
+    <!--每个任务
+      id 任务id。新加任务请自增id，id数不要重复了。
+      name 任务名
+      <Condition/> 任务完成条件
+	    type 完成条件。详细说明见本文件后面的说明"链式任务的任务完成条件"
+	    require_value 需要的进度
+	    param1 参数1。比如，"在家园生产N次XX"，就是这里的param1
+	    param2 参数2
+      <Rewards/> 奖励的内容。由于UI显示需要，任务奖励不允许编辑超过3条。
+    -->
+    <Quest id="1" name="str_cfg_return_chained_quest1">
+      <Condition type="1" require_value="10" param1="111" param2=""/>
+      <Rewards>
+        <RewardItem type="3" para1="3036181" para2="3036181" para3="350"/>
+        <RewardItem type="3" para1="3046115" para2="3046115" para3="1"/>
+        <RewardItem type="3" para1="3046102" para2="3046102" para3="1"/>
+      </Rewards>
+    </Quest>
+    <Quest id="2" name="str_cfg_return_chained_quest2">
+      <Condition type="3" require_value="1" param1="3036181" param2="" />
+      <Rewards>
+        <RewardItem type="3" para1="3046115" para2="3046115" para3="1"/>
+        <RewardItem type="3" para1="3046102" para2="3046102" para3="1"/>
+      </Rewards>
+    </Quest>
+  </Quests>
+ 
+  <!--链式任务的任务完成条件
+    1 在家园生产N次XX。（Y/N）
+    2 家园等级达到N级。（Y/N）
+    3 进行1次布阵。
+    ...
+  -->
+ 
+</ReturnQuestChain>

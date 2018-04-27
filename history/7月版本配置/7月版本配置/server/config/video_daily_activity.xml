@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="GBK"?>
+<VideoDailyActivities count="4" refresh_time="240">
+	 <!--count为每日随机出来的活动数量，refresh_time为刷新时间（距离0点的时间偏移量：单位分钟）-->
+	 <!--CompleteConditions是活动的完成条件，类型对应关系如下：
+	  0：累计登陆梦工厂n天
+	  1：在视频房间停留n分钟
+	  2：累计赠送n个礼物
+	  3：领取n个热度宝箱
+	  4：完成n个主播任务
+	  5：累计增加财富值n
+	  6：累计增加经验值n
+	  7：累计新关注n个主播-->
+	<!--奖励类型：
+        1  经验
+        2  梦幻币
+        3  梦幻币房间礼物-->
+	<Activity id="1">
+		<Name>str_video_activity_follow_anchor_name</Name>
+		<Desc>str_video_activity_follow_anchor_desc</Desc>
+		<CompleteConditions>
+		    <Condition type="7" value="1"/>
+		</CompleteConditions>
+		<Rewards>
+			<Reward type="2" male="0" female="0" count="20"/>
+			<Reward type="1" male="0" female="0" count="20"/>
+		</Rewards>
+	</Activity>
+	<Activity id="2">
+		<Name>str_video_activity_follow_anchor_name</Name>
+		<Desc>str_video_activity_follow_anchor_desc</Desc>
+		<CompleteConditions>
+		    <Condition type="7" value="5"/>
+		</CompleteConditions>
+		<Rewards>
+			<Reward type="2" male="0" female="0" count="30"/>
+			<Reward type="1" male="0" female="0" count="30"/>
+		</Rewards>
+	</Activity>
+	
+	<Activity id="3">
+		<Name>str_video_activity_gain_wealth_name</Name>
+		<Desc>str_video_activity_gain_wealth_desc</Desc>
+		<CompleteConditions>
+		    <Condition type="5" value="10"/>
+		</CompleteConditions>
+		<Rewards>	
+			<Reward type="2" male="0" female="0" count="10"/>
+			<Reward type="1" male="0" female="0" count="50"/>
+		</Rewards>
+	</Activity>
+	<Activity id="4">
+		<Name>str_video_activity_gain_wealth_name</Name>
+		<Desc>str_video_activity_gain_wealth_desc</Desc>
+		<CompleteConditions>
+		    <Condition type="5" value="100"/>
+		</CompleteConditions>
+		<Rewards>
+			<Reward type="2" male="0" female="0" count="100"/>
+			<Reward type="1" male="0" female="0" count="100"/>
+		</Rewards>
+	</Activity>
+	<Activity id="5">
+		<Name>str_video_activity_gain_wealth_name</Name>
+		<Desc>str_video_activity_gain_wealth_desc</Desc>
+		<CompleteConditions>
+		    <Condition type="5" value="500"/>
+		</CompleteConditions>
+		<Rewards>
+			<Reward type="2" male="0" female="0" count="500"/>
+			<Reward type="1" male="0" female="0" count="100"/>
+		</Rewards>
+	</Activity>
+	<Activity id="6">
+		<Name>str_video_activity_gain_wealth_name</Name>
+		<Desc>str_video_activity_gain_wealth_desc</Desc>
+		<CompleteConditions>
+		    <Condition type="5" value="1000"/>
+		</CompleteConditions>
+		<Rewards>
+			<Reward type="2" male="0" female="0" count="1000"/>
+			<Reward type="1" male="0" female="0" count="100"/>
+		</Rewards>
+	</Activity>
+	<Activity id="7">
+		<Name>str_video_activity_gain_wealth_name</Name>
+		<Desc>str_video_activity_gain_wealth_desc</Desc>
+		<CompleteConditions>
+		    <Condition type="5" value="10000"/>
+		</CompleteConditions>
+		<Rewards>
+			<Reward type="2" male="0" female="0" count="10000"/>
+			<Reward type="1" male="0" female="0" count="200"/>
+		</Rewards>
+	</Activity>
+	
+	<Activity id="8">
+		<Name>str_video_activity_gain_exp_name</Name>
+		<Desc>str_video_activity_gain_exp_desc</Desc>
+		<CompleteConditions>
+		    <Condition type="6" value="500"/>
+		</CompleteConditions>
+		<Rewards>
+			<Reward type="2" male="0" female="0" count="100"/>
+			<Reward type="3" male="30" female="30" count="2"/>
+		</Rewards>
+	</Activity>
+	<Activity id="9">
+		<Name>str_video_activity_gain_exp_name</Name>
+		<Desc>str_video_activity_gain_exp_desc</Desc>
+		<CompleteConditions>
+		    <Condition type="6" value="2000"/>
+		</CompleteConditions>
+		<Rewards>
+			<Reward type="2" male="0" female="0" count="200"/>
+			<Reward type="3" male="30" female="30" count="10"/>
+		</Rewards>
+	</Activity>
+	
+	<Activity id="10">
+		<Name>str_video_activity_anchor_task_name</Name>
+		<Desc>str_video_activity_anchor_task_desc</Desc>
+		<CompleteConditions>
+		    <Condition type="4" value="1"/>
+		</CompleteConditions>
+		<Rewards>
+			<Reward type="2" male="0" female="0" count="10"/>
+			<Reward type="1" male="0" female="0" count="50"/>
+		</Rewards>
+	</Activity>
+	<Activity id="11">
+		<Name>str_video_activity_anchor_task_name</Name>
+		<Desc>str_video_activity_anchor_task_desc</Desc>
+		<CompleteConditions>
+		    <Condition type="4" value="10"/>
+		</CompleteConditions>
+		<Rewards>
+			<Reward type="2" male="0" female="0" count="100"/>
+			<Reward type="1" male="0" female="0" count="100"/>
+		</Rewards>
+	</Activity>
+	<Activity id="12">
+		<Name>str_video_activity_anchor_task_name</Name>
+		<Desc>str_video_activity_anchor_task_desc</Desc>
+		<CompleteConditions>
+		    <Condition type="4" value="20"/>
+		</CompleteConditions>
+		<Rewards>
+			<Reward type="2" male="0" female="0" count="500"/>
+			<Reward type="1" male="0" female="0" count="100"/>
+		</Rewards>
+	</Activity>
+	<Activity id="13">
+		<Name>str_video_activity_anchor_task_name</Name>
+		<Desc>str_video_activity_anchor_task_desc</Desc>
+		<CompleteConditions>
+		    <Condition type="4" value="50"/>
+		</CompleteConditions>
+		<Rewards>
+			<Reward type="2" male="0" female="0" count="1000"/>
+			<Reward type="1" male="0" female="0" count="100"/>
+		</Rewards>
+	</Activity>
+	
+	<Activity id="14">
+		<Name>str_video_activity_take_box_name</Name>
+		<Desc>str_video_activity_take_box_desc</Desc>
+		<CompleteConditions>
+		    <Condition type="3" value="1"/>
+		</CompleteConditions>
+		<Rewards>
+			<Reward type="2" male="0" female="0" count="10"/>
+			<Reward type="1" male="0" female="0" count="50"/>
+		</Rewards>
+	</Activity>
+	<Activity id="15">
+		<Name>str_video_activity_take_box_name</Name>
+		<Desc>str_video_activity_take_box_desc</Desc>
+		<CompleteConditions>
+		    <Condition type="3" value="10"/>
+		</CompleteConditions>
+		<Rewards>
+			<Reward type="2" male="0" female="0" count="100"/>
+			<Reward type="1" male="0" female="0" count="100"/>
+		</Rewards>
+	</Activity>
+	<Activity id="16">
+		<Name>str_video_activity_take_box_name</Name>
+		<Desc>str_video_activity_take_box_desc</Desc>
+		<CompleteConditions>
+		    <Condition type="3" value="20"/>
+		</CompleteConditions>
+		<Rewards>
+			<Reward type="2" male="0" female="0" count="500"/>
+			<Reward type="1" male="0" female="0" count="100"/>
+		</Rewards>
+	</Activity>
+	<Activity id="17">
+		<Name>str_video_activity_take_box_name</Name>
+		<Desc>str_video_activity_take_box_desc</Desc>
+		<CompleteConditions>
+		    <Condition type="3" value="50"/>
+		</CompleteConditions>
+		<Rewards>
+			<Reward type="2" male="0" female="0" count="1000"/>
+			<Reward type="1" male="0" female="0" count="100"/>
+		</Rewards>
+	</Activity>
+	
+	<Activity id="18">
+		<Name>str_video_activity_stay_room_name</Name>
+		<Desc>str_video_activity_stay_room_desc</Desc>
+		<CompleteConditions>
+		    <Condition type="1" value="5"/>
+		</CompleteConditions>
+		<Rewards>
+			<Reward type="2" male="0" female="0" count="20"/>
+			<Reward type="1" male="0" female="0" count="20"/>
+		</Rewards>
+	</Activity>
+	<Activity id="19">
+		<Name>str_video_activity_stay_room_name</Name>
+		<Desc>str_video_activity_stay_room_desc</Desc>
+		<CompleteConditions>
+		    <Condition type="1" value="10"/>
+		</CompleteConditions>
+		<Rewards>
+			<Reward type="2" male="0" female="0" count="40"/>
+			<Reward type="1" male="0" female="0" count="40"/>
+		</Rewards>
+	</Activity>
+	<Activity id="20">
+		<Name>str_video_activity_stay_room_name</Name>
+		<Desc>str_video_activity_stay_room_desc</Desc>
+		<CompleteConditions>
+		    <Condition type="1" value="15"/>
+		</CompleteConditions>
+		<Rewards>
+			<Reward type="2" male="0" female="0" count="60"/>
+			<Reward type="1" male="0" female="0" count="60"/>
+		</Rewards>
+	</Activity>
+	<Activity id="21">
+		<Name>str_video_activity_stay_room_name</Name>
+		<Desc>str_video_activity_stay_room_desc</Desc>
+		<CompleteConditions>
+		    <Condition type="1" value="30"/>
+		</CompleteConditions>
+		<Rewards>
+			<Reward type="2" male="0" female="0" count="80"/>
+			<Reward type="1" male="0" female="0" count="80"/>
+		</Rewards>
+	</Activity>
+	<Activity id="22">
+		<Name>str_video_activity_stay_room_name</Name>
+		<Desc>str_video_activity_stay_room_desc</Desc>
+		<CompleteConditions>
+		    <Condition type="1" value="45"/>
+		</CompleteConditions>
+		<Rewards>
+			<Reward type="2" male="0" female="0" count="100"/>
+			<Reward type="1" male="0" female="0" count="100"/>
+		</Rewards>
+	</Activity>
+	<Activity id="23">
+		<Name>str_video_activity_stay_room_name</Name>
+		<Desc>str_video_activity_stay_room_desc</Desc>
+		<CompleteConditions>
+		    <Condition type="1" value="60"/>
+		</CompleteConditions>
+		<Rewards>
+			<Reward type="2" male="0" female="0" count="150"/>
+			<Reward type="1" male="0" female="0" count="150"/>
+		</Rewards>
+	</Activity>
+</VideoDailyActivities>

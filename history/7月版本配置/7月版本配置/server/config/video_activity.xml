@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="GBK"?>
+<VideoActivities>
+	<!--TrigConditions是活动的触发条件，类型对应关系如下：
+	  0：角色创建时间大于等于（value值为时间）
+	  1：角色创建时间小于等于（value值为时间）
+	  2：角色等级大于等于
+	  3：角色等级小于等于
+	  4：财富值大于等于
+	  5：财富值小于等于
+	  6：角色类型（value值0老用户，1为新用户）-->
+	<!--CompleteConditions是活动的完成条件，类型对应关系如下：
+	  0：累计登陆梦工厂n天
+	  1：在视频房间停留n分钟
+	  2：累计赠送n个礼物
+	  3：领取n个热度宝箱
+	  4：完成n个主播任务
+	  5：累计增加财富值n
+	  6：累计增加经验值n
+	  7：累计新关注n个主播-->
+	<!--奖励类型：
+        1  经验
+        2  梦幻币
+        3  梦幻币房间礼物-->
+  <Activity id="1" begin_time="2014-1-1,00:00" end_time="2030-12-31,23:59">
+		<Name>str_video_activity_stay_room_name</Name>
+		<Desc>str_video_activity_stay_room_desc</Desc>
+		<TrigConditions>
+			<Condition type="6" value="1"/>
+		</TrigConditions>
+		<CompleteConditions>
+			<Condition type="1" value="120"/>
+		</CompleteConditions>
+		<Rewards>
+			<Reward type="3" male="30" female="30" count="10"/>
+			<Reward type="3" male="31" female="31" count="10"/>
+		</Rewards>
+	</Activity>	
+	<Activity id="2" begin_time="2014-1-1,00:00" end_time="2030-12-31,23:59">
+		<Name>str_video_activity_stay_room_name</Name>
+		<Desc>str_video_activity_stay_room_desc</Desc>
+		<TrigConditions>
+			<Condition type="6" value="0"/>
+		</TrigConditions>
+		<CompleteConditions>
+			<Condition type="1" value="120"/>
+		</CompleteConditions>
+		<Rewards>
+			<Reward type="3" male="30" female="30" count="5"/>
+			<Reward type="3" male="31" female="31" count="5"/>
+		</Rewards>
+	</Activity>
+	
+	<Activity id="3" begin_time="2014-1-1,00:00" end_time="2030-12-31,23:59">
+		<Name>str_video_activity_follow_anchor_name</Name>
+		<Desc>str_video_activity_follow_anchor_desc</Desc>
+		<TrigConditions>
+			<Condition type="6" value="1"/>
+		</TrigConditions>
+		<CompleteConditions>
+			<Condition type="7" value="10"/>
+		</CompleteConditions>
+		<Rewards>
+			<Reward type="2" male="0" female="0" count="500"/>
+			<Reward type="1" male="0" female="0" count="500"/>
+		</Rewards>
+	</Activity>
+	<Activity id="4" begin_time="2014-1-1,00:00" end_time="2030-12-31,23:59">
+		<Name>str_video_activity_follow_anchor_name</Name>
+		<Desc>str_video_activity_follow_anchor_desc</Desc>
+		<TrigConditions>
+			<Condition type="6" value="0"/>
+		</TrigConditions>
+		<CompleteConditions>
+			<Condition type="7" value="10"/>
+		</CompleteConditions>
+		<Rewards>
+			<Reward type="2" male="0" female="0" count="400"/>
+			<Reward type="1" male="0" female="0" count="400"/>
+		</Rewards>
+	</Activity>
+	
+	<Activity id="5" begin_time="2015-1-1,00:00" end_time="2030-12-31,23:59">
+		<Name>str_video_activity_send_gift_name_1</Name>
+		<Desc>str_video_activity_send_gift_desc</Desc>
+		<TrigConditions>
+			<Condition type="6" value="1"/>
+		</TrigConditions>
+		<CompleteConditions>
+			<Condition type="2" value="20"/>
+		</CompleteConditions>
+		<Rewards>
+			<Reward type="2" male="0" female="0" count="500"/>
+			<Reward type="1" male="0" female="0" count="500"/>
+		</Rewards>
+	</Activity>
+	<Activity id="6" begin_time="2015-1-1,00:00" end_time="2030-12-31,23:59">
+		<Name>str_video_activity_send_gift_name_1</Name>
+		<Desc>str_video_activity_send_gift_desc</Desc>
+		<TrigConditions>
+			<Condition type="6" value="0"/>
+		</TrigConditions>
+		<CompleteConditions>
+			<Condition type="2" value="20"/>
+		</CompleteConditions>
+		<Rewards>
+			<Reward type="2" male="0" female="0" count="400"/>
+			<Reward type="1" male="0" female="0" count="400"/>
+		</Rewards>
+	</Activity>
+	
+	<Activity id="7" begin_time="2015-1-1,00:00" end_time="2030-12-31,23:59">
+		<Name>str_video_activity_take_box_name_1</Name>
+		<Desc>str_video_activity_take_box_desc</Desc>
+		<TrigConditions>
+			<Condition type="6" value="1"/>
+			<Condition type="6" value="0"/>
+		</TrigConditions>
+		<CompleteConditions>
+			<Condition type="3" value="20"/>
+		</CompleteConditions>
+		<Rewards>
+			<Reward type="1" male="0" female="0" count="500"/>
+		</Rewards>
+	</Activity>
+	
+	<Activity id="8" begin_time="2015-1-1,00:00" end_time="2030-12-31,23:59">
+		<Name>str_video_activity_anchor_task_name_1</Name>
+		<Desc>str_video_activity_anchor_task_desc</Desc>
+		<TrigConditions>
+			<Condition type="6" value="1"/>
+			<Condition type="6" value="0"/>
+		</TrigConditions>
+		<CompleteConditions>
+			<Condition type="4" value="10"/>
+		</CompleteConditions>
+		<Rewards>
+			<Reward type="2" male="0" female="0" count="500"/>
+			<Reward type="1" male="0" female="0" count="500"/>
+		</Rewards>
+	</Activity>
+	
+	<Activity id="9" begin_time="2015-1-1,00:00" end_time="2030-12-31,23:59">
+		<Name>str_video_activity_gain_exp_name</Name>
+		<Desc>str_video_activity_gain_exp_desc</Desc>
+		<TrigConditions>
+			<Condition type="6" value="1"/>
+			<Condition type="3" value="60"/>
+		</TrigConditions>
+		<CompleteConditions>
+			<Condition type="6" value="1000"/>
+		</CompleteConditions>
+		<Rewards>
+			<Reward type="3" male="30" female="30" count="5"/>
+			<Reward type="3" male="32" female="32" count="5"/>
+		</Rewards>
+	</Activity>
+	<Activity id="10" begin_time="2015-1-1,00:00" end_time="2030-12-31,23:59">
+		<Name>str_video_activity_gain_exp_name</Name>
+		<Desc>str_video_activity_gain_exp_desc</Desc>
+		<TrigConditions>
+			<Condition type="6" value="0"/>
+			<Condition type="3" value="60"/>
+		</TrigConditions>
+		<CompleteConditions>
+			<Condition type="6" value="1000"/>
+		</CompleteConditions>
+		<Rewards>
+			<Reward type="3" male="30" female="30" count="2"/>
+			<Reward type="3" male="32" female="32" count="2"/>
+		</Rewards>
+	</Activity>
+	
+	<Activity id="11" begin_time="2015-1-1,00:00" end_time="2030-12-31,23:59">
+		<Name>str_video_activity_gain_wealth_name_1</Name>
+		<Desc>str_video_activity_gain_wealth_desc</Desc>
+		<TrigConditions>
+			<Condition type="6" value="1"/>
+		</TrigConditions>
+		<CompleteConditions>
+			<Condition type="5" value="2000"/>
+		</CompleteConditions>
+		<Rewards>
+			<Reward type="2" male="0" female="0" count="1000"/>
+			<Reward type="1" male="0" female="0" count="500"/>
+		</Rewards>
+	</Activity>
+	<Activity id="12" begin_time="2015-1-1,00:00" end_time="2030-12-31,23:59">
+		<Name>str_video_activity_gain_wealth_name_1</Name>
+		<Desc>str_video_activity_gain_wealth_desc</Desc>
+		<TrigConditions>
+			<Condition type="6" value="0"/>
+		</TrigConditions>
+		<CompleteConditions>
+			<Condition type="5" value="2000"/>
+		</CompleteConditions>
+		<Rewards>
+			<Reward type="2" male="0" female="0" count="800"/>
+			<Reward type="1" male="0" female="0" count="500"/>
+		</Rewards>
+	</Activity>
+	
+	<Activity id="13" begin_time="2015-1-1,00:00" end_time="2030-12-31,23:59">
+		<Name>str_video_activity_gain_wealth_name_2</Name>
+		<Desc>str_video_activity_gain_wealth_desc</Desc>
+		<TrigConditions>
+			<Condition type="6" value="1"/>
+		</TrigConditions>
+		<CompleteConditions>
+			<Condition type="5" value="5000"/>
+		</CompleteConditions>
+		<Rewards>
+			<Reward type="2" male="0" female="0" count="2000"/>
+			<Reward type="1" male="0" female="0" count="1000"/>
+			<Reward type="3" male="32" female="32" count="10"/>
+		</Rewards>
+	</Activity>
+	<Activity id="14" begin_time="2015-1-1,00:00" end_time="2030-12-31,23:59">
+		<Name>str_video_activity_gain_wealth_name_2</Name>
+		<Desc>str_video_activity_gain_wealth_desc</Desc>
+		<TrigConditions>
+			<Condition type="6" value="0"/>
+		</TrigConditions>
+		<CompleteConditions>
+			<Condition type="5" value="5000"/>
+		</CompleteConditions>
+		<Rewards>
+			<Reward type="2" male="0" female="0" count="1500"/>
+			<Reward type="1" male="0" female="0" count="800"/>
+			<Reward type="3" male="32" female="32" count="5"/>
+		</Rewards>
+	</Activity>
+</VideoActivities>

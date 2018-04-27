@@ -1,0 +1,2 @@
+jar包转dex:dx --dex --verbose --no-strict --output=temp.dex dgm.jar
+dex-method-count.bat temp.dex

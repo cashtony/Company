@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="GBK"?>
+<AnchorTaskReward>
+	<Reward type="3" male="3020002" female="3020002" count="20" weight="3" />
+	<Reward type="3" male="4025107" female="4125113" count="1" weight="8" />
+	<Reward type="3" male="1032772" female="1132855" count="1" weight="8" />
+	<Reward type="3" male="3018239" female="3018239" count="1" weight="14" />
+	<Reward type="3" male="3056100" female="3056100" count="1" weight="15" />
+	<Reward type="3" male="3018252" female="3018252" count="1" weight="3" />
+	<Reward type="3" male="3036103" female="3036103" count="1" weight="5" />
+	<Reward type="3" male="3036102" female="3036102" count="1" weight="14" />
+	<Reward type="3" male="3018274" female="3018274" count="5" weight="15" />
+	<Reward type="3" male="3089128" female="3089128" count="1" weight="15" />
+</AnchorTaskReward>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="GBK"?>
+<LiveTaskConfig>
+	<!--最大任务数量-->
+   	<TaskCount count="4"/>
+	<!--清空任务时间，距离0点的时间偏移量（单位分钟）-->
+	<ClearTime time="120"/>
+	<!--任务进度刷新频率（单位秒）-->
+	<RefreshFrequency frequency="5"/>
+	<!--任务信息写DB频率（单位秒），最大回档时间-->
+	<SaveFrequency frequency="60"/>
+	<!--Super Room Server向Video Activity Server上报频率-->
+	<UpdateFrequency frequency="5"/>
+</LiveTaskConfig>

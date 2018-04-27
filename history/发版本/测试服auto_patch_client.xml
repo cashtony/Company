@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<config>
+
+    <auto_patch_client>
+
+        <url>
+			http://x5.qq.com/CommNews/static/inc/client_lb.shtml
+        
+        </url>
+
+        <url_adv>
+				http://x5.qq.com/CommNews/static/inc/client_pic.htm
+        
+        </url_adv>
+
+        <download url="http://x5.qq.com/" />
+
+        <video_version_servers>
+
+            <IDC
+                name="炫舞梦工厂"
+                group="双线"
+                provider="cmcc"
+                zoneid="888" >
+
+                <addr
+                    ip="111.161.57.18"
+                    port="9861" />
+            </IDC>
+        </video_version_servers>
+
+        <version_servers>
+            
+           	<IDC name="测试服" provider="cmcc" group="电信" recommend="1" zoneid="224">	
+			<addr ip="113.105.163.86" port="9999" />
+		</IDC>
+		<IDC name="现网测试服" provider="cmcc" group="电信" recommend="1" zoneid="226">	
+			<addr ip="113.105.165.177" port="9999" />
+		</IDC>
+
+            <TDirSvrInfo>
+
+               <SvrIP val="101.226.87.24"/>
+		    <SvrIP val="testb.mtcls.qq.com"/>
+		    <SvrPort val="10002"/>
+		    <SvrPort val="10004"/>
+		    <SvrPort val="10006"/>
+            </TDirSvrInfo>
+        </version_servers>
+    </auto_patch_client>
+
+</config>

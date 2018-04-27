@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="GBK" standalone="yes" ?>
+<!--
+level:id 守护id 
+注
+（1）高级守护的id必须大于低级守护的id
+（2）守护的id不能变，第一个版本使用 [10 20 50 100] 4个id，方便将来需要插入中间等级的守护
+
+<name> 守护名称
+<RequireAffinity>  需要亲密度
+<RequireFollower> 需要免费花数量
+<ChatFont>	聊天字体
+<ChatFace> 专属表情
+<WordNum>  聊天文字上限（单位：字符）
+<JoinBroadcast> 入场广播
+<ChatCdTime> 缩短聊天CD时间
+<JoinFullRoom> 加入人满房间
+<PrivilegeChatBoard> 显示在主播端的专属聊天区
+<PlayerListFont>玩家列表上的字体			
+<GuardIcon> 守护标签
+<MaxNumCount> 需要手动赋予的守护级别，最大人数
+-->
+<GuardConfig>
+	<level id="0" valid="1"><!--id 为0表示没有守护，不得修改-->
+		<name>0</name>
+		<ChatFont>0</ChatFont>
+		<ChatFace>0</ChatFace>
+		<WordNum>86</WordNum>
+		<JoinBroadcast>0</JoinBroadcast>
+		<ChatCdTime>0</ChatCdTime>
+		<JoinFullRoom>0</JoinFullRoom>	
+		<PlayerListFont></PlayerListFont>
+		<GuardIcon></GuardIcon>
+		<PrivilegeChatBoard>0</PrivilegeChatBoard>
+		<MaxNumCount>0</MaxNumCount>
+		<RequireFollower>0</RequireFollower>
+		<RequireAffinity>0</RequireAffinity>
+	</level>
+	<level id="10" valid="1"><!--初级守护-->
+		<name>str_ui_videoroom_fansDefend_name10</name>
+		<ChatFont>0</ChatFont>
+		<ChatFace>0</ChatFace>
+		<WordNum>86</WordNum>
+		<JoinBroadcast>0</JoinBroadcast>
+		<ChatCdTime>0</ChatCdTime>
+		<JoinFullRoom>0</JoinFullRoom>	
+		<PlayerListFont></PlayerListFont>					
+		<GuardIcon>video_guard_01</GuardIcon>
+		<PrivilegeChatBoard>0</PrivilegeChatBoard>
+		<MaxNumCount>0</MaxNumCount>
+		<RequireFollower>0</RequireFollower>
+		<RequireAffinity>5000</RequireAffinity>
+	</level>
+	<level id="20" valid="1"><!--中级守护-->
+		<name>str_ui_videoroom_fansDefend_name20</name>
+		<ChatFont>0</ChatFont>
+		<ChatFace>1</ChatFace>
+		<WordNum>86</WordNum>
+		<JoinBroadcast>0</JoinBroadcast>
+		<ChatCdTime>0</ChatCdTime>
+		<JoinFullRoom>0</JoinFullRoom>	
+		<PlayerListFont></PlayerListFont>
+		<GuardIcon>video_guard_02</GuardIcon>
+		<PrivilegeChatBoard>0</PrivilegeChatBoard>
+		<MaxNumCount>0</MaxNumCount>
+		<RequireFollower>0</RequireFollower>
+		<RequireAffinity>10000</RequireAffinity>
+	</level>
+	<level id="50" valid="1"><!--高级守护-->
+		<name>str_ui_videoroom_fansDefend_name50</name>
+		<ChatFont>4</ChatFont>
+		<ChatFace>1</ChatFace>
+		<WordNum>86</WordNum>
+		<JoinBroadcast>0</JoinBroadcast>
+		<ChatCdTime>0</ChatCdTime>
+		<JoinFullRoom>0</JoinFullRoom>	
+		<PlayerListFont></PlayerListFont>					
+		<GuardIcon>video_guard_03</GuardIcon>
+		<PrivilegeChatBoard>0</PrivilegeChatBoard>
+		<MaxNumCount>0</MaxNumCount>
+		<RequireFollower>0</RequireFollower>
+		<RequireAffinity>20000</RequireAffinity>
+	</level>
+	<level id="100" valid="1"><!--100是天使守护，需要手动赋予-->
+		<name>str_ui_videoroom_fansDefend_name100</name>
+		<ChatFont>5</ChatFont>
+		<ChatFace>1</ChatFace>
+		<WordNum>255</WordNum><!--255个字符-->
+		<JoinBroadcast>1</JoinBroadcast>
+		<ChatCdTime>1</ChatCdTime>
+		<JoinFullRoom>1</JoinFullRoom>	
+		<DisableRooms><!--无视加入人满房间特权的房间列表-->
+			<room value="520"/>
+			<room value="521"/>
+		</DisableRooms>
+		<PlayerListFont></PlayerListFont>
+		<GuardIcon>video_guard_04</GuardIcon>
+		<PrivilegeChatBoard>1</PrivilegeChatBoard>
+		<MaxNumCount>10</MaxNumCount>
+		<RequireFollower>0</RequireFollower>
+		<RequireAffinity>50000</RequireAffinity>
+	</level>
+	<level id="200" valid="1"><!--200是灵魂守护-->
+		<name>str_ui_videoroom_fansDefend_name200</name>
+		<ChatFont>9</ChatFont>
+		<ChatFace>1</ChatFace>
+		<WordNum>255</WordNum><!--255个字符-->
+		<JoinBroadcast>1</JoinBroadcast>
+		<ChatCdTime>1</ChatCdTime>
+		<JoinFullRoom>1</JoinFullRoom>	
+		<DisableRooms><!--无视加入人满房间特权的房间列表-->
+			<room value="520"/>
+			<room value="521"/>
+		</DisableRooms>
+		<PlayerListFont></PlayerListFont>
+		<GuardIcon>video_guard_05</GuardIcon>
+		<PrivilegeChatBoard>1</PrivilegeChatBoard>
+		<BanChat>1</BanChat>
+		<MaxNumCount>0</MaxNumCount>
+		<RequireFollower>0</RequireFollower>
+		<RequireAffinity>200000</RequireAffinity>
+		<!-- 防黑粉：玩家是否享有不受“刚进入视频房间时候，公屏聊天的冷却时间”特权， 0 -不享有， 非0 - 享有 -->
+		<IngorePublicChatCoolDownOnEnter>1</IngorePublicChatCoolDownOnEnter>
+		<ShowInSuperGuardList>1</ShowInSuperGuardList>
+	</level>
+	<level id="300" valid="1"><!--300是至尊守护-->
+		<name>str_ui_videoroom_fansDefend_name300</name>
+		<ChatFont>8</ChatFont>
+		<ChatFace>1</ChatFace>
+		<WordNum>255</WordNum><!--255个字符-->
+		<JoinBroadcast>1</JoinBroadcast>
+		<ChatCdTime>1</ChatCdTime>
+		<JoinFullRoom>1</JoinFullRoom>	
+		<DisableRooms><!--无视加入人满房间特权的房间列表-->
+			<room value="520"/>
+			<room value="521"/>
+		</DisableRooms>
+		<PlayerListFont></PlayerListFont>
+		<GuardIcon>video_guard_06</GuardIcon>
+		<PrivilegeChatBoard>1</PrivilegeChatBoard>
+		<BanChat>1</BanChat>
+		<MaxNumCount>0</MaxNumCount>
+		<RequireFollower>0</RequireFollower>
+		<RequireAffinity>800000</RequireAffinity>
+		<!-- 防黑粉：玩家是否享有不受“刚进入视频房间时候，公屏聊天的冷却时间”特权， 0 -不享有， 非0 - 享有 -->
+		<IngorePublicChatCoolDownOnEnter>1</IngorePublicChatCoolDownOnEnter>
+		<ShowInSuperGuardList>1</ShowInSuperGuardList>
+	</level>
+	<!--专属聊天表情的id列表，逻辑判断需要，具体value="xxx"的配置内容参考chat_img.xml，就是那里面的g55这种东西-->
+	<ChatFaces>
+		<face_str value="g76"/>
+		<face_str value="g77"/>
+		<face_str value="g78"/>
+		<face_str value="g79"/>
+		<face_str value="g80"/>
+		<face_str value="g81"/>
+		<face_str value="g82"/>
+		<face_str value="g83"/>
+		<face_str value="g84"/>
+		<face_str value="g85"/>
+	</ChatFaces>
+	<!--守护规则的网址-->
+	<RuleURL value="http://x5.qq.com/act/a20140306mar/page04.htm#1"/>
+</GuardConfig>

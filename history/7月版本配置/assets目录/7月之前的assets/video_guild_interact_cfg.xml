@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="GB2312" ?>
+<VideoGuildInteract>
+	<!--后援团粉丝牌配置-->
+	<VideoGuildBoard>
+		<FansBoard id="1">
+			<Name>str_fans_sign_name_1</Name> <!--粉丝牌名-->
+			<Eff>ui_effect/videoroom/videoroom_fsp_v1_1.spe</Eff>	<!--粉丝牌特效路径-->
+			<FirstGuildEff>ui_effect/videoroom/videoroom_fsp_v1_2.spe</FirstGuildEff>	<!--No.1粉丝牌特效路径-->
+			<Uir>znewui_spfanslove</Uir>			<!--粉丝牌UIR-->
+			<FirstGuildUir>znewui_spfanslove1</FirstGuildUir> <!--No.1粉丝牌UIR-->
+			<SaleInfo>
+				<Item day="1" cost="200"/>
+				<Item day="3" cost="500"/>
+				<Item day="7" cost="1000"/>
+			</SaleInfo>
+		</FansBoard>
+		<FansBoard id="2">
+			<Name>str_fans_sign_name_2</Name>
+			<Eff>ui_effect/videoroom/videoroom_fsp_v2_1.spe</Eff>
+			<FirstGuildEff>ui_effect/videoroom/videoroom_fsp_v2_2.spe</FirstGuildEff>
+			<Uir>znewui_spfanshan</Uir>
+			<FirstGuildUir>znewui_spfanshan1</FirstGuildUir> <!--No.1粉丝牌UIR-->
+			<SaleInfo>
+				<Item day="1" cost="200"/>
+				<Item day="3" cost="500"/>
+				<Item day="7" cost="1000"/>
+			</SaleInfo>
+		</FansBoard>
+		<FansBoard id="3">
+			<Name>str_fans_sign_name_3</Name>
+			<Eff>ui_effect/videoroom/videoroom_fsp_v3_1.spe</Eff>
+			<FirstGuildEff>ui_effect/videoroom/videoroom_fsp_v3_2.spe</FirstGuildEff>
+			<Uir>znewui_spfansjltx</Uir>
+			<FirstGuildUir>znewui_spfansjltx1</FirstGuildUir>
+			<SaleInfo>
+				<Item day="1" cost="200"/>
+				<Item day="3" cost="500"/>
+				<Item day="7" cost="1000"/>
+			</SaleInfo>
+		</FansBoard>
+	</VideoGuildBoard>
+	
+	<!--后援团月票配置-->
+	<VideoGuildTicket>
+		<TicketLimit>10</TicketLimit>	<!--献月票上限-->
+		<AddAnchorScore>500</AddAnchorScore> <!--增加主播积分-->
+		<CostWealth>280</CostWealth> <!--消耗后援团资源-->
+	</VideoGuildTicket>
+	
+	<!--后援团每日签到配置-->
+	<VideoGuildSignIn>
+		<AddSelfScore>20</AddSelfScore> <!--签到增加个人积分-->
+		<AddWealth>2</AddWealth> <!--签到增加后援团财富-->
+		<!--VIP签到对应 额外增加财富-->
+		<VipAddWealth vip="1" add_wealth = "1"/>
+		<VipAddWealth vip="2" add_wealth = "2"/>
+		<VipAddWealth vip="3" add_wealth = "4"/>
+		<VipAddWealth vip="4" add_wealth = "6"/>
+		<VipAddWealth vip="5" add_wealth = "8"/>
+	</VideoGuildSignIn>
+
+	<!--后援团献炫贝礼物配置-->
+	<VideoGuildCoinGift>
+		<AddWealthPerCoin>10</AddWealthPerCoin> <!--1炫贝获得的后援团财富-->
+		<AddAnchorScorePerStarlight>10</AddAnchorScorePerStarlight> <!--1星耀获得的主播积分-->
+		<AddMemberScorePerStarlight>1</AddMemberScorePerStarlight> <!--1星耀获得的个人积分-->
+		
+		<!--VIP献炫贝礼物对应 额外增加财富系数-->
+		<VipAddWealthMul vip="1" wealth_mul = "0.1"/>
+		<VipAddWealthMul vip="2" wealth_mul = "0.3"/>
+		<VipAddWealthMul vip="3" wealth_mul = "0.8"/>
+		<VipAddWealthMul vip="4" wealth_mul = "1.4"/>
+		<VipAddWealthMul vip="5" wealth_mul = "2.2"/>
+		<!--VIP献炫贝礼物对应 额外增加积分系数-->
+		<VipAddAnchoScoreMul vip="1" score_mul = "0.1"/>
+		<VipAddAnchoScoreMul vip="2" score_mul = "0.3"/>
+		<VipAddAnchoScoreMul vip="3" score_mul = "0.8"/>
+		<VipAddAnchoScoreMul vip="4" score_mul = "1.4"/>
+		<VipAddAnchoScoreMul vip="5" score_mul = "2.2"/>
+	</VideoGuildCoinGift>
+
+</VideoGuildInteract>

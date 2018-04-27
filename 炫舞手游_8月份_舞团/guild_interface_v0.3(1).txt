@@ -1,0 +1,183 @@
+
+GuildModule:
+
+	//=============== 创建或加入舞团 ================
+	/*
+	*	获取舞团列表
+	*/
+	public IEnumerator LoadGuildList(AsyncRequestRes res, GuildListParam param, List<GuildSimpleInfo> result)
+		result:	GUILD_OP_SUCC
+					GUILD_OP_FAIL
+					GUILD_OP_SERVER_BUSY
+					
+	/*
+	*	创建舞团
+	*/
+	public IEnumerator CreateGuild(AsyncRequestRes res, GuildCreateParam param)
+		result:	GUILD_OP_SUCC
+					GUILD_OP_FAIL
+					GUILD_OP_SERVER_BUSY
+					GUILD_OP_CREATE_ALREADY_IN_GUILD
+					GUILD_OP_OTHER_NAME_ERROR
+					GUILD_OP_NAME_HAS_SPACE
+					GUILD_OP_NAME_DIRTY
+					GUILD_OP_VERTICALBAR
+					GUILD_OP_NAME_DUP
+					GUILD_OP_NO_LICENCE
+					
+	/*
+	*	申请入团
+	*/
+	public IEnumerator ApplyGuild(AsyncRequestRes res, long guild_id)
+
+	/*
+	*	快速申请入团
+	*/
+	public IEnumerator QuickApplyGuild(AsyncRequestRes res)
+
+	/*
+	*	邀请玩家
+	*/
+	public IEnumerator InvitePlayer(AsyncRequestRes res, long player_id)
+
+	/*
+	*	获取入团申请
+	*/
+	public IEnumerator LoadGuildApply(AsyncRequestRes res, List<GuildApplyInfo> result)
+
+	/*
+	*	审核入团申请
+	*/
+	public IEnumerator SetJoinApply(AsyncRequestRes res, long player_id, bool pass)
+
+	/*
+	*	响应邀请
+	*/
+	public IEnumerator RespondInvite(AsyncRequestRes res, long guild_id, bool accpet)
+	//=============== ~创建或加入舞团 ===============
+
+	//=============== 舞团相关功能 ==================
+	/*
+	*	获取舞团信息
+	*/
+	public IEnumerator LoadGuildInfo(AsyncRequestRes res, GuildSimpleInfo result)
+
+	/*
+	*	获取舞团成员
+	*/
+	public IEnumerator LoadGuildMember(AsyncRequestRes res, List<GuildMemberInfo> result)
+
+	/*
+	*	获取舞团事件
+	*/
+	public IEnumerator LoadGuildEvent(AsyncRequestRes res, List<guild_event_info> result)
+
+	/*
+	*	获取舞团官职
+	*/
+	public IEnumerator LoadGuildPostion(AsyncRequestRes res, Dictionary<int, guild_position_info> result)
+
+	/*
+	*	解散舞团
+	*/
+	public IEnumerator DisbandGuild(AsyncRequestRes res)
+
+	/*
+	*	取消解散
+	*/
+	public IEnumerator CancelDisbandGuild(AsyncRequestRes res)
+
+	/*
+	*	退出舞团
+	*/
+	public IEnumerator QuitGuild(AsyncRequestRes res)
+
+	/*
+	*	舞团聊天
+	*/
+	public IEnumerator GuildChat(AsyncRequestRes res, ChatRequest req)
+
+	/*
+	*	舞团留言板留言
+	*/
+	public IEnumerator SendMsgBoard(AsyncRequestRes res, string content)
+
+	/*
+	*	获取舞团留言板
+	*/
+	public IEnumerator LoadMsgBoard(AsyncRequestRes res, List<guild_msg_board_info> result)
+	//=============== ~舞团相关功能 =================
+
+	//=============== 舞团权限功能 ==================
+	/*
+	*	团长传位
+	*/
+	public IEnumerator ChiefDemise(AsyncRequestRes res, long player_id)
+
+	/*
+	*	设置入团申请规则
+	*/
+	public IEnumerator SetApplyRule(AsyncRequestRes res, int rule)
+
+	/*
+	*	舞团重命名
+	*/
+	public IEnumerator GuildRename(AsyncRequestRes res, string name)
+
+	/*
+	*	设置简介
+	*/
+	public IEnumerator SetGuildIntro(AsyncRequestRes res, string intro)
+
+	/*
+	*	设置公告
+	*/
+	public IEnumerator SetGuildBulletin(AsyncRequestRes res, string bulletin)
+
+	/*
+	*	开除团员
+	*/
+	public IEnumerator BanishMember(AsyncRequestRes res, long player_id)
+
+	/*
+	*	设置团员官职
+	*/
+	public IEnumerator SetMemberPosition(AsyncRequestRes res, long player_id, int position_id)
+
+	/*
+	*	设置官职名称
+	*/
+	public IEnumerator SetPositionName(AsyncRequestRes res, int position_id, string name)
+
+	/*
+	*	设置官职权限
+	*/
+	public IEnumerator SetPositionRight(AsyncRequestRes res, int position_id, int rights)
+
+	/*
+	*	发送舞团邮件
+	*/
+	public IEnumerator SendGuildMail(AsyncRequestRes res, email_send_info email_param)
+
+	/*
+	*	删除留言板
+	*/
+	public IEnumerator DeleteMsgBorad(AsyncRequestRes res, long msg_id)
+
+	/*
+	*	舞团升级
+	*/
+	public IEnumerator GuildUpgrade(AsyncRequestRes res, int cur_level)
+	//=============== ~舞团权限功能 =================
+	
+	//=============== ~本地接口 ====================
+    /*
+	*	是否在舞团
+	*/
+    public bool IsInGuild()
+
+    /*
+	*	是否拥有某权限
+	*/
+    public bool HasRight(EGuildRightType type)
+    //=============== ~本地接口 ====================

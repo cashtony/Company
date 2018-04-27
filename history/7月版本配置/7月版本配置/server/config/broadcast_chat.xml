@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="GB2312"?>
+<BroadcastChat>
+
+    <!-- 每秒钟公屏广播的最大次数 -->
+    <MaxPublicBroadcastTimes value="20"/>
+    <!-- 每秒钟飞屏广播的最大次数 -->
+    <MaxWhistleBroadcastTimes value="5"/>
+</BroadcastChat>
