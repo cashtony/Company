@@ -2,7 +2,11 @@
 2.内容:
 	资源整理工具 (重点)
 	MrYang插件(因已描述一带而过)
-	个人网站要完善(已完善)
+	个人网站要完善(已完善)一些坑:
+		1:在使用ajax手机和电脑的浏览器不同,jquery支持方式不一致,只能使用XMLHttpRequest,csrftoken也是一大问题.
+		2:图片压缩PILLOW,src->middle->thum,尝试了各种工具(pngquant,webp等) 最终决定的方案是使用pillow,压缩图片大小至等比1500以下.清除exif信息
+		3.数据库设计:一个文件一条数据库,文件记录父文件夹id.取出时根据父id取子.并且清理文件夹父id记录.即数据库内有且最多只能显示二级文件夹.
+		4.Dir根据不同类型读取内容.
 		
 		http://mr0yang.imwork.net/sg/
 		http://mr0yang.imwork.net/own/
